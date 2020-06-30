@@ -1,21 +1,29 @@
 {
-    "name": "oz",
-    "version": "1.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "gulp": "^4.0.2",
-        "gulp-sass": "^4.0.2",
-        "node-sass-package-importer": "^5.3.2"
-    },
-    "dependencies": {
-        "html5-reset": "^2.1.3",
-        "normalize.css": "^8.0.1"
-    }
+  "name": "oz",
+  "version": "1.0.0",
+  "description": "smacssベースのテンプレート",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass-package-importer": "^5.3.2"
+  },
+  "dependencies": {
+    "html5-reset": "^2.1.3",
+    "normalize.css": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttoshiki/web_template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ttoshiki/web_template/issues"
+  },
+  "homepage": "https://github.com/ttoshiki/web_template#readme"
 }
