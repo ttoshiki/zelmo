@@ -32,17 +32,17 @@ $custmername
 [メールアドレス]
 $emailadd
 
+[お電話番号]
+$phone
+
 [ご利用店舗]
 $salon
 
 [第1希望日時]
 $firstdate
 
-[第1希望日時]
+[第2希望日時]
 $seconddate
-
-[お電話番号]
-$phone
 
 ────────────────────────────────────
 EOD;
