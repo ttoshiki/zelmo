@@ -154,20 +154,20 @@
 
   &__lead {
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.94;
     font-weight: 600;
     font-size: 18px;
     margin: 64px auto 0;
 
     &:not(:first-of-type) {
-      margin: 32px auto 0;
+      margin: 40px auto 0;
     }
   }
 
   &__list {
     width: 80%;
     max-width: 1120px;
-    margin: 104px auto 0;
+    margin: 108px auto 0;
   }
 
   &__item {
@@ -179,7 +179,7 @@
     }
 
     &:not(:first-child) {
-      margin-top: 100px;
+      margin-top: 120px;
     }
 
     &:nth-child(odd) {
@@ -509,7 +509,7 @@
   }
 
   &__subHeading {
-    margin: 24px 0 0;
+    margin: 32px 0 0;
     text-align: center;
     color: $gold;
     font-size: 35px;
@@ -517,7 +517,7 @@
     letter-spacing: 3px;
 
     &.-other {
-      margin: 40px 0 0;
+      margin: 48px 0 0;
     }
   }
 
@@ -549,7 +549,7 @@
   &__table {
     width: 96%;
     max-width: 974px;
-    margin: 16px auto 0;
+    margin: 48px auto 0;
     font-size: 25px;
     border-spacing: 4px;
 
@@ -575,6 +575,8 @@
     }
 
     &.-other {
+      margin-top: 16px;
+
       th {
         width: 20%;
       }
@@ -651,7 +653,6 @@
 
   &__item {
     background-color: #c0af50;
-    padding: 8px 12px 20px;
     box-shadow: 0px 0px 10.24px 5.76px rgba(0, 0, 0, 0.1);
 
     &:not(:first-child) {
@@ -661,33 +662,32 @@
 
   &__questionWrapper {
     display: flex;
+    padding: 8px 12px 20px;
     align-items: center;
     color: $white;
     position: relative;
 
-    &::before {
-      content: "";
-      width: 15px;
-      height: 1px;
-      background-color: $white;
-      position: absolute;
-      top: 62%;
-      right: 20px;
-    }
-
     &:hover {
       cursor: pointer;
     }
+  }
 
-    &::after {
-      content: "";
-      width: 1px;
-      height: 15px;
-      background-color: $white;
-      position: absolute;
-      top: 50%;
-      right: 27px;
-    }
+  &__iconHorizontal {
+    width: 15px;
+    height: 1px;
+    background-color: $white;
+    position: absolute;
+    top: 51%;
+    right: 28px;
+  }
+
+  &__iconVertical {
+    width: 1px;
+    height: 15px;
+    background-color: $white;
+    position: absolute;
+    top: 43%;
+    right: 35px;
   }
 
   &__itemQuestionNumber {
@@ -710,7 +710,8 @@
 
   &__answer {
     padding-left: 120px;
-    margin: 20px 0 0px;
+    margin: 0;
+    padding: 0 24px 24px 132px;
     line-height: 1.9;
     letter-spacing: 0.5px;
     font-size: 16px;
@@ -720,16 +721,16 @@
 
 .salon {
   background-color: #3a3531;
-  padding: 100px 0 160px;
+  padding: 100px 0 192px;
 
   &__infoWrapper {
     position: relative;
     width: 96%;
-    margin: 40px auto 0;
+    margin: 48px auto 0;
     max-width: 1120px;
 
     &:not(:first-of-type) {
-      margin-top: 160px;
+      margin-top: 188px;
     }
   }
 
@@ -899,6 +900,10 @@
       width: 100%;
       -webkit-appearance: none;
       position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &:not(:first-child) {
@@ -928,7 +933,7 @@
     color: $white;
     border: none;
     font-size: 22px;
-    padding: 16px 0;
+    padding: 24px 0;
     width: 380px;
     letter-spacing: 30px;
     text-indent: 30px;

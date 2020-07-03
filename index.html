@@ -50,7 +50,7 @@
               <a href="#salon" class="header__navLink">店舗情報</a>
             </li>
           </ul>
-          <a href="" class="linkButton">
+          <a href="#form" class="linkButton">
             <span class="linkButton__icon"
               ><img src="img/icon_present.png" width="30" height="30" alt=""
             /></span>
@@ -62,7 +62,7 @@
             src="img/mv_text.png"
             alt="男のためのラグジュアリー脱毛サロン メンズ脱毛サロン ZELMO"
           />
-          <img src="img/mv_image.png" alt="" />
+          <img src="img/mv_image.png" alt="" class="header__mvImage" />
         </div>
       </header>
       <section class="cta">
@@ -606,6 +606,8 @@
               <p class="faq__question yugothic">
                 何か持っていくものはありますか？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               特に必要なものは原則ございません。<br />
@@ -620,6 +622,8 @@
               <p class="faq__question yugothic">
                 痛みを感じずに脱毛できますか？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               個人差や部位差はございますが、ニードルやレーザーによる脱毛に比べますと痛みはかなり少ないという方がほとんどです。<br />
@@ -636,6 +640,8 @@
               <p class="faq__question yugothic">
                 施術スタッフは男性/女性どちらですか？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               全て女性スタッフが施術を行います。<br />
@@ -650,6 +656,8 @@
                 Q<span class="faq__num">4</span>
               </h4>
               <p class="faq__question yugothic">周りの目が気になりませんか？</p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               【完全個室】の脱毛サロンですので、安心してご利用下さい。<br />
@@ -664,6 +672,8 @@
               <p class="faq__question yugothic">
                 効果が出るまで何回くらい通えばいい？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               【毛量、毛質、肌質により個人差はございますが、3〜4回の施術で自己処理が楽になり効果を実感できるお客様が多いようです。<br />
@@ -678,6 +688,8 @@
               <p class="faq__question yugothic">
                 未成年でも施術を受けられますか？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               はい、可能です。<br />
@@ -693,6 +705,8 @@
               <p class="faq__question yugothic">
                 強引な勧誘や押し売りはありませんか？
               </p>
+              <span class="faq__iconHorizontal"></span>
+              <span class="faq__iconVertical"></span>
             </div>
             <p class="faq__answer yugothic">
               エステでよくある強引な勧誘や無理な押し売りは当サロンにはございません。<br />
@@ -796,7 +810,7 @@
             ※未成年の方は、親権者同意書が必要となります。
           </p>
           <form
-            action="sendmail.php"
+            action="contact/sendmail.php"
             method="post"
             id="form1"
             name="send"
@@ -882,6 +896,7 @@
                 type="text"
                 id="reserve-1"
                 name="firstdate"
+                autocomplete="off"
                 placeholder="第1希望日時をご記入ください"
                 required
               />
@@ -894,6 +909,7 @@
                 type="text"
                 id="reserve-2"
                 name="seconddate"
+                autocomplete="off"
                 placeholder="第2希望日時をご記入ください"
                 required
               />
@@ -909,6 +925,39 @@
       <footer class="footer">
         <img src="img/footer_logo.png" alt="ZELMOロゴ" class="footer__logo" />
       </footer>
+    </div>
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content">
+        <a class="js-modal-close modal__closeButton" href="">×</a>
+        <img src="img/logo_dark.png" alt="" class="modal__logo" />
+        <p class="modal__paragraph">
+          初回限定！<br />
+          特別体験をTELで予約！
+        </p>
+        <div class="modal__shopNameWrapper">
+          <span class="modal__shopName">
+            恵比寿店
+          </span>
+        </div>
+        <a href="tel" class="modal__tel"
+          ><img
+            src="img/icon_phone.png"
+            alt=""
+            class="modal__icon"
+          />03-6455-2871</a
+        >
+        <div class="modal__shopNameWrapper">
+          <span class="modal__shopName">銀座店</span>
+        </div>
+        <a href="tel" class="modal__tel"
+          ><img
+            src="img/icon_phone.png"
+            alt=""
+            class="modal__icon"
+          />03-6260-6075</a
+        >
+      </div>
     </div>
   </body>
 </html>

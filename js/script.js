@@ -127,21 +127,19 @@ $(".faq__questionWrapper").click(function () {
     $(this).next().slideUp();
     $(this).removeClass("isOpen");
   }
+  $(".faq__iconVertical", this).toggle();
 });
 
-//modal
-
-var $modal = $(".modal");
-var $inner = $(".modal_inner");
-var $btn = $(".cta-p, .tel-r");
-var $close = $(".cancel-b");
-
-$btn.on("click", function (event) {
-  $modal.addClass("is-active");
-});
-
-$(".call-b, .cancel-b").on("click", function (event) {
-  $modal.removeClass("is-active");
+// modal
+$(function () {
+  $(".linkButton.-tel").on("click", function () {
+    $(".js-modal").fadeIn();
+    return false;
+  });
+  $(".js-modal-close").on("click", function () {
+    $(".js-modal").fadeOut();
+    return false;
+  });
 });
 
 var $elem = $(".js-image-switch");

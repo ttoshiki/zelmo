@@ -1,8 +1,9 @@
 @import "_variables";
 
 .yugothic {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic,
-    "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic",
+    Verdana, Meiryo, sans-serif;
 }
 
 .linkButton {
@@ -37,6 +38,7 @@
     background-color: transparent;
     color: $black;
     justify-content: flex-start;
+    pointer-events: none;
   }
 }
 
@@ -150,5 +152,108 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__bg {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__content {
+    background: #c9bb98;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+  }
+
+  &__closeButton {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 18px;
+    padding: 2px;
+    color: $black;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__paragraph {
+    font-size: 30px;
+    text-align: center;
+    margin: 32px auto 0;
+  }
+
+  &__shopNameWrapper {
+    max-width: 384px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #3a3531;
+    }
+
+    &:first-of-type {
+      margin-top: 16px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 24px;
+    }
+  }
+
+  &__shopName {
+    font-size: 24px;
+    letter-spacing: 2px;
+    background-color: #c9bb98;
+    position: relative;
+    z-index: 10;
+    padding: 0 8px;
+  }
+
+  &__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 8px auto 0;
+    max-width: 384px;
+    padding: 8px 0;
+    background-color: #3a3531;
+    text-align: center;
+    color: $white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+
+  &__icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
   }
 }
