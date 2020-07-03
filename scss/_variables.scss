@@ -13,3 +13,15 @@ $pink: #f03a74;
 
 $gold: #ae960e;
 $gold-light: #c6b556;
+
+$breakpoints: (
+  "mobile": "screen and (max-width: 768px)",
+  "tab": "screen and (max-width: 1024px)",
+  "pc": "screen and (min-width: 1025px)",
+);
+
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

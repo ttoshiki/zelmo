@@ -257,3 +257,34 @@
     margin-right: 20px;
   }
 }
+
+@include mq(tab) {
+  .-pc {
+    display: none;
+  }
+
+  .linkButton {
+    position: relative;
+    justify-content: flex-start;
+    height: 100%;
+
+    &__icon {
+      img {
+        width: 32px;
+      }
+    }
+
+    &.-tel {
+      margin-left: 0;
+      img {
+        width: 28px;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      left: calc(50% + 22px);
+      transform: translateX(-50%);
+    }
+  }
+}

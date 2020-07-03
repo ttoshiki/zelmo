@@ -283,30 +283,34 @@ a {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .-pc {
+    display: none;
+  }
+  .linkButton {
+    position: relative;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .linkButton__icon img {
+    width: 32px;
+  }
+  .linkButton.-tel {
+    margin-left: 0;
+  }
+  .linkButton.-tel img {
+    width: 28px;
+  }
+  .linkButton__text {
+    position: absolute;
+    left: calc(50% + 22px);
+    transform: translateX(-50%);
+  }
+}
+
 .header {
   background-image: url(../img/mv_bg.jpg);
   background-size: cover;
-}
-
-.header__nav {
-  display: flex;
-  width: 94%;
-  justify-content: flex-end;
-  margin: 0 auto;
-  padding: 24px 0;
-  letter-spacing: 1px;
-}
-
-.header__navList {
-  display: flex;
-  flex-grow: 0.4;
-  font-size: 17px;
-  margin: 12px 0;
-  align-items: center;
-}
-
-.header__navItem {
-  margin: 0 22px;
 }
 
 .header__navLink {
@@ -318,10 +322,115 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
+}
+
+.header__catchInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__mvText {
+  width: 31.73vw;
 }
 
 .header__mvImage {
   margin-left: 24px;
+  width: 34vw;
+}
+
+@media screen and (min-width: 1025px) {
+  .header__nav {
+    display: flex;
+    width: 94%;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 24px 0;
+    letter-spacing: 1px;
+  }
+  .header__nav.-tab {
+    display: none;
+  }
+  .header__navList {
+    display: flex;
+    flex-grow: 0.4;
+    font-size: 17px;
+    margin: 12px 0;
+    align-items: center;
+  }
+  .header__navItem {
+    margin: 0 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+  }
+  .header__nav.-pc {
+    display: none;
+  }
+  .header__trigger,
+  .header__trigger span {
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 0.4s;
+  }
+  .header__trigger {
+    position: relative;
+    width: 48px;
+    height: 100%;
+    background-color: #ae960e;
+  }
+  .header__trigger span {
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .header__trigger span:first-of-type {
+    transform: translate(-50%, 15px);
+  }
+  .header__trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header__trigger span:nth-of-type(3) {
+    transform: translate(-50%, 31px);
+  }
+  .header__trigger:hover {
+    cursor: pointer;
+  }
+  .header__navList {
+    display: none;
+  }
+  .header__navLink {
+    width: 48%;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__catch {
+    justify-content: flex-end;
+    padding-top: 10vw;
+  }
+  .header__catchInner {
+    position: relative;
+  }
+  .header__mvText {
+    position: absolute;
+    width: 80vw;
+    left: -12vw;
+    top: 34vw;
+  }
+  .header__mvImage {
+    width: 72.53vw;
+  }
 }
 
 .merit {

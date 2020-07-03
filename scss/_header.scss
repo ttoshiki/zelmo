@@ -4,27 +4,6 @@
   background-image: url(../img/mv_bg.jpg);
   background-size: cover;
 
-  &__nav {
-    display: flex;
-    width: 94%;
-    justify-content: flex-end;
-    margin: 0 auto;
-    padding: 24px 0;
-    letter-spacing: 1px;
-  }
-
-  &__navList {
-    display: flex;
-    flex-grow: 0.4;
-    font-size: 17px;
-    margin: 12px 0;
-    align-items: center;
-  }
-
-  &__navItem {
-    margin: 0 22px;
-  }
-
   &__navLink {
     color: $white;
   }
@@ -34,9 +13,136 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
+  }
+
+  &__catchInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__mvText {
+    width: 31.73vw;
   }
 
   &__mvImage {
     margin-left: 24px;
+    width: 34vw;
+  }
+}
+
+@include mq(pc) {
+  .header {
+    &__nav {
+      display: flex;
+      width: 94%;
+      justify-content: flex-end;
+      margin: 0 auto;
+      padding: 24px 0;
+      letter-spacing: 1px;
+
+      &.-tab {
+        display: none;
+      }
+    }
+
+    &__navList {
+      display: flex;
+      flex-grow: 0.4;
+      font-size: 17px;
+      margin: 12px 0;
+      align-items: center;
+    }
+
+    &__navItem {
+      margin: 0 22px;
+    }
+  }
+}
+
+@include mq(tab) {
+  .header {
+    &__nav {
+      display: flex;
+      position: sticky;
+      bottom: 0;
+
+      &.-pc {
+        display: none;
+      }
+    }
+
+    &__trigger,
+    &__trigger span {
+      box-sizing: border-box;
+      display: inline-block;
+      transition: all 0.4s;
+    }
+
+    &__trigger {
+      position: relative;
+      width: 48px;
+      height: 100%;
+      background-color: $gold;
+
+      & span {
+        position: absolute;
+        left: 50%;
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+
+        &:first-of-type {
+          transform: translate(-50%, 15px);
+        }
+
+        &:nth-of-type(2) {
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &:nth-of-type(3) {
+          transform: translate(-50%, 31px);
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__navList {
+      display: none;
+    }
+
+    &__navLink {
+      width: 48%;
+      height: 48px;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .header {
+    &__catch {
+      justify-content: flex-end;
+      padding-top: 10vw;
+    }
+
+    &__catchInner {
+      position: relative;
+    }
+
+    &__mvText {
+      position: absolute;
+      width: 80vw;
+      left: -12vw;
+      top: 34vw;
+    }
+
+    &__mvImage {
+      width: 72.53vw;
+    }
   }
 }

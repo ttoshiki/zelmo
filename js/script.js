@@ -104,20 +104,6 @@ $("#reserve-2").datetimepicker({
   onShow: logic,
 });
 
-$(".isview").on("inview", function (event, isInView) {
-  if (isInView) {
-    $("#floatcta").fadeOut(300);
-  } else {
-    $("#floatcta").fadeIn(300);
-  }
-});
-
-$(".noview").on("inview", function (event, isInView) {
-  if (isInView) {
-    $("#floatcta").fadeOut(300);
-  }
-});
-
 // slide down
 $(".faq__questionWrapper").click(function () {
   if (!$(this).hasClass("isOpen")) {
@@ -145,7 +131,7 @@ $(function () {
 var $elem = $(".js-image-switch");
 var sp = "-sp.";
 var pc = "-pc.";
-var replaceWidth = 1024;
+var replaceWidth = 769;
 
 function imageSwitch() {
   var windowWidth = parseInt($(window).width());
