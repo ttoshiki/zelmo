@@ -1,595 +1,914 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://zelmo.jp/lp/vio/" />
+    <meta
+      property="og:title"
+      content="VIO脱毛｜恵比寿・銀座のメンズ脱毛サロン ZELMO（ゼルモ）"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:description"
+      content="ZELMO（ゼルモ）のVIO脱毛(陰毛脱毛)キャンペーン。初回「無料」で光脱毛が体験できるキャンペーンを実施中です。痛みが少ないのにパワフルで効果が早い最新の脱毛マシーンと経験豊かなスタッフの高い技術力を是非この機会に恵比寿・銀座の男性専用脱毛サロンで体験下さい。"
+    />
+    <meta property="og:image" content="画像のURL" />
+    <title>VIO脱毛｜恵比寿・銀座のメンズ脱毛サロン ZELMO（ゼルモ）</title>
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lib/jquery.datetimepicker.css" />
+    <script
+      src="https://instant.page/1.2.0"
+      type="module"
+      integrity="sha384-0xWpXpkOUkAVETH+RMYJlSFIDNGlnPHgmqv2rP3uZS1BM48EMcxAZGW09n4pTGV4"
+      crossorigin
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
+    <script src="./js/lib/jquery.inview.js" defer></script>
+    <script src="./js/lib/jquery.datetimepicker.full.min.js" defer></script>
+    <script src="./js/holiday.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta property="og:url" content="https://zelmo.jp/lp/vio/" />
-  <meta property="og:title" content="VIO脱毛｜恵比寿・銀座のメンズ脱毛サロン ZELMO（ゼルモ）" />
-  <meta property="og:type" content="article">
-  <meta property="og:description"
-    content="ZELMO（ゼルモ）のVIO脱毛(陰毛脱毛)キャンペーン。初回「無料」で光脱毛が体験できるキャンペーンを実施中です。痛みが少ないのにパワフルで効果が早い最新の脱毛マシーンと経験豊かなスタッフの高い技術力を是非この機会に恵比寿・銀座の男性専用脱毛サロンで体験下さい。" />
-  <meta property="og:image" content="画像のURL" />
-  <title>VIO脱毛｜恵比寿・銀座のメンズ脱毛サロン ZELMO（ゼルモ）</title>
-  <link rel="stylesheet" href="css/lib/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://instant.page/1.2.0" type="module"
-    integrity="sha384-0xWpXpkOUkAVETH+RMYJlSFIDNGlnPHgmqv2rP3uZS1BM48EMcxAZGW09n4pTGV4" crossorigin></script>
-</head>
-
-<body>
-  <div class="l-wrapper">
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__navList">
-          <li class="header__navItem"><a href="#reason" class="header__navLink">選ばれる理由</a></li>
-          <li class="header__navItem"><a href="#flow" class="header__navLink">特別体験の流れ</a></li>
-          <li class="header__navItem"><a href="" class="header__navLink">プラン料金</a></li>
-          <li class="header__navItem"><a href="" class="header__navLink">店舗情報</a></li>
+  <body>
+    <div class="l-wrapper">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <li class="header__navItem">
+              <a href="#reason" class="header__navLink">選ばれる理由</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#flow" class="header__navLink">特別体験の流れ</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#price" class="header__navLink">プラン料金</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#salon" class="header__navLink">店舗情報</a>
+            </li>
+          </ul>
+          <a href="" class="linkButton">
+            <span class="linkButton__icon"
+              ><img src="img/icon_present.png" width="30" height="30" alt=""
+            /></span>
+            <span class="linkButton__text">脱毛体験を予約する</span>
+          </a>
+        </nav>
+        <div class="header__catch">
+          <img
+            src="img/mv_text.png"
+            alt="男のためのラグジュアリー脱毛サロン メンズ脱毛サロン ZELMO"
+          />
+          <img src="img/mv_image.png" alt="" />
+        </div>
+      </header>
+      <section class="cta">
+        <h2 class="cta__heading">
+          <span class="cta__headingPrimary"
+            ><strong class="dot">初</strong><strong class="dot">回</strong
+            ><strong class="dot">限</strong
+            ><strong class="dot">定</strong>！</span
+          ><br />
+          <span>格安特別脱毛体験！</span>
+        </h2>
+        <img
+          src="img/cta_1.png"
+          srcset="img/cta_1@2x.png 2x"
+          alt="VIO ３ヶ所セット特別価格 9000円"
+          class="cta__vio"
+        />
+        <span class="cta__plus"></span>
+        <img
+          src="img/cta_2.png"
+          srcset="img/cta_2@2x.png 2x"
+          alt="Sパーツ2ヶ所 無料！ 0円"
+          class="cta__sparts"
+        />
+        <div class="cta__links">
+          <div>
+            <a href="#form" class="linkButton -web">
+              <span class="linkButton__icon"
+                ><img src="img/icon_pc.png" alt=""
+              /></span>
+              <span class="linkButton__text">WEB予約</span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="linkButton -tel">
+              <span class="linkButton__icon"
+                ><img src="img/icon_tel.png" alt=""
+              /></span>
+              <span class="linkButton__text">TEL予約</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="merit">
+        <h2 class="merit__heading">
+          男性にVIO脱毛が<span class="merit__headingPrimary"
+            ><strong class="dot">人</strong
+            ><strong class="dot">気</strong>！</span
+          >
+        </h2>
+        <h3 class="merit__subHeading">VIO脱毛のメリット</h3>
+        <ul class="merit__list">
+          <li class="merit__item">
+            <div class="merit__itemImageWrapper">
+              <img
+                src="img/merit01.png"
+                srcset="img/merit01@2x.png"
+                alt=""
+                class="merit__itemImage"
+              />
+            </div>
+            <h4 class="merit__itemHeading">
+              圧倒的な清潔感と<br />
+              快適感を
+            </h4>
+            <p class="merit__itemParagraph yugothic">
+              尿や排泄物などの汚物が毛に絡まらなくなり、圧倒的な清潔感と快適感が手に入れられます。
+            </p>
+          </li>
+          <li class="merit__item">
+            <div class="merit__itemImageWrapper">
+              <img
+                src="img/merit02.png"
+                srcset="img/merit02@2x.png"
+                alt=""
+                class="merit__itemImage"
+              />
+            </div>
+            <h4 class="merit__itemHeading">
+              陰部のムレや痒みから<br />
+              解放される
+            </h4>
+            <p class="merit__itemParagraph yugothic">
+              VIOを手入れすることによって清潔感が保たれ、炎症や異臭などの予防ができます。
+            </p>
+          </li>
+          <li class="merit__item">
+            <div class="merit__itemImageWrapper">
+              <img
+                src="img/merit03.png"
+                srcset="img/merit03@2x.png"
+                alt=""
+                class="merit__itemImage"
+              />
+            </div>
+            <h4 class="merit__itemHeading">パートナー受けがいい</h4>
+            <p class="merit__itemParagraph yugothic">
+              「彼氏がVIO処理で清潔にしていてくれるから嬉しい！」とパートナーに喜ばれます。
+            </p>
+          </li>
         </ul>
-        <a href="" class="linkButton">
-          <span class="linkButton__icon"><img src="img/icon_present.png" alt=""></span>
-          <span class="linkButton__text">脱毛体験を予約する</span>
-        </a>
-      </nav>
-      <div class="header__catch">
-        <img src="img/mv_text.png" alt="男のためのラグジュアリー脱毛サロン メンズ脱毛サロン ZELMO">
-        <img src="img/mv_image.png" alt="">
-      </div>
-    </header>
-    <section class="cta">
-      <h2 class="cta__heading">
-        <span class="cta__headingPrimary"><strong class="dot">初</strong><strong class="dot">回</strong><strong
-            class="dot">限</strong><strong class="dot">定</strong>！</span><br />
-        <span>格安特別脱毛体験！</span>
-      </h2>
-      <img src="img/cta_1.png" srcset="img/cta_1@2x.png 2x" alt="VIO ３ヶ所セット特別価格 9000円" class="cta__vio">
-      <span class="cta__plus"></span>
-      <img src="img/cta_2.png" srcset="img/cta_2@2x.png 2x" alt="Sパーツ2ヶ所 無料！ 0円" class="cta__sparts">
-      <div class="cta__links">
-        <div>
-          <a href="" class="linkButton -web">
-            <span class="linkButton__icon"><img src="img/icon_pc.png" alt=""></span>
-            <span class="linkButton__text">WEB予約</span>
-          </a>
-        </div>
-        <div>
-          <a href="" class="linkButton -tel">
-            <span class="linkButton__icon"><img src="img/icon_tel.png" alt=""></span>
-            <span class="linkButton__text">TEL予約</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="merit">
-      <h2 class="merit__heading">男性にVIO脱毛が<span class="merit__headingPrimary"><strong class="dot">人</strong><strong
-            class="dot">気</strong>！</span>
-      </h2>
-      <h3 class="merit__subHeading">VIO脱毛のメリット</h3>
-      <ul class="merit__list">
-        <li class="merit__item">
-          <div class="merit__itemImageWrapper">
-            <img src="img/merit01.png" srcset="img/merit01@2x.png" alt="" class="merit__itemImage">
-          </div>
-          <h4 class="merit__itemHeading">
-            圧倒的な清潔感と<br />
-            快適感を
-          </h4>
-          <p class="merit__itemParagraph yugothic">尿や排泄物などの汚物が毛に絡まらなくなり、圧倒的な清潔感と快適感が手に入れられます。</p>
-        </li>
-        <li class="merit__item">
-          <div class="merit__itemImageWrapper">
-            <img src="img/merit02.png" srcset="img/merit02@2x.png" alt="" class="merit__itemImage">
-          </div>
-          <h4 class="merit__itemHeading">
-            陰部のムレや痒みから<br />
-            解放される
-          </h4>
-          <p class="merit__itemParagraph yugothic">VIOを手入れすることによって清潔感が保たれ、炎症や異臭などの予防ができます。</p>
-        </li>
-        <li class="merit__item">
-          <div class="merit__itemImageWrapper">
-            <img src="img/merit03.png" srcset="img/merit03@2x.png" alt="" class="merit__itemImage">
-          </div>
-          <h4 class="merit__itemHeading">パートナー受けがいい</h4>
-          <p class="merit__itemParagraph yugothic">「彼氏がVIO処理で清潔にしていてくれるから嬉しい！」とパートナーに喜ばれます。</p>
-        </li>
-      </ul>
-    </section>
-    <section class="think">
-      <h2 class="think__heading">
-        <span class="think__headingSmall">「男のVIO脱毛ってどうなの？」</span><br />
-        <span class="think__headingLarge"><strong class="dot">女</strong><strong class="dot">性</strong></span>に聞いてみました！
-      </h2>
-      <img src="img/think.png" srcset="img/think@2x.png" alt="" class="think__image">
-    </section>
-    <section class="reason" id="reason">
-      <h2 class="reason__heading">ZELMOが選ばれる<span class="reason__headingPrimary"><strong class="dot">6</strong><strong
-            class="dot">つ</strong><strong class="dot">の</strong><strong class="dot">理</strong><strong
-            class="dot">由</strong></span>
-      </h2>
-      <h3 class="reason__subHeading">男のためのラグジュアリー脱毛サロン</h3>
-      <p class="reason__lead yugothic">
-        男性の美に対する意識も年々高まっている中で、<br />
-        男性が「理想の自分に近づく」ためのサロンとして<br />
-        ZELMOがオープンしました。
-      </p>
-      <p class="reason__lead yugothic">
-        施術を担当するのは、高い技術力を持った専門スタッフ。
-      </p>
-      <p class="reason__lead yugothic">
-        毛周期、脱毛知識、皮膚理論などの座学～実技研修を経ているため、<br />
-        安心して私達にお任せ下さい。
-      </p>
-      <ol class="reason__list">
-        <li class="reason__item">
-          <img src="img/reason01.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              純国産の最新メンズ脱毛器、<br />
-              確かな技術力
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              男性特有の濃く、太い毛に適した、純国産の強力なメンズ脱毛器を使用。毛周期、脱毛知識、皮膚理論などの座学～実技研修を経た、技術力のある専門スタッフが担当します。また、フェイシャル、アロママッサージも可能です。
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <img src="img/reason02.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              完全個室の<br />
-              ラグジュアリーな空間
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              隠れ家をイメージした、ラグジュアリーなブルックリンスタイルの内装の中、リラックスした状態で施術をお受けいただけます。完全個室のメンズ脱毛サロンのため、プライバシーにも配慮されています。
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <img src="img/reason03.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              業界最低水準の<br />
-              価格設定
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              ラグジュアリーな完全個室のメンズ脱毛サロンでありながら、業界最低水準の価格設定で、安心の保証システムも充実。また、通いやすい都度払いを採用していて、現金もしくはクレジットカードからお選びいただけます。
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <img src="img/reason04.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              安心して通える<br />
-              保証システム
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              ゼルモの光脱毛の施術回数の目安は、約10回。11回目以降は、通常価格の70％OFFの施術を無期限でお受けいただけます。（※ヒゲのみ16回以降）
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <img src="img/reason05.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              希望に合わせて選べる<br />
-              脱毛方法
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              ゼルモでは、光脱毛とワックス脱毛をどちらも受けることが可能。例えば、ヒゲは光脱毛で行い、VIOはワックス脱毛で行うなど、お客様のご希望に合わせた脱毛方法を選択していただけます。
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <img src="img/reason06.jpg" alt="">
-          <div class="reason__text">
-            <h4 class="reason__itemHeading">
-              男をワンランク上げる<br />
-              脱毛以外のメニュー
-            </h4>
-            <p class="reason__itemParagraph yugothic">
-              肌をワントーン明るくするフェイシャルや、日々の疲れや自律神経を整えるアロママッサージなど、男を磨くメニューを多く取り揃えています。
-            </p>
-          </div>
-        </li>
-      </ol>
-    </section>
-    <section class="cta">
-      <h2 class="cta__heading">
-        <span class="cta__headingPrimary"><strong class="dot">初</strong><strong class="dot">回</strong><strong
-            class="dot">限</strong><strong class="dot">定</strong>！</span><br />
-        <span>格安特別脱毛体験！</span>
-      </h2>
-      <img src="img/cta_1.png" srcset="img/cta_1@2x.png 2x" alt="VIO ３ヶ所セット特別価格 9000円" class="cta__vio">
-      <span class="cta__plus"></span>
-      <img src="img/cta_2.png" srcset="img/cta_2@2x.png 2x" alt="Sパーツ2ヶ所 無料！ 0円" class="cta__sparts">
-      <div class="cta__links">
-        <div>
-          <a href="" class="linkButton -web">
-            <span class="linkButton__icon"><img src="img/icon_pc.png" alt=""></span>
-            <span class="linkButton__text">WEB予約</span>
-          </a>
-        </div>
-        <div>
-          <a href="" class="linkButton -tel">
-            <span class="linkButton__icon"><img src="img/icon_tel.png" alt=""></span>
-            <span class="linkButton__text">TEL予約</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="machine">
-      <h2 class="machine__heading">
-        <b class="machine__headingLarge">ZELMO</b>の<strong class="machine__headingPrimary">男性専用</strong><br />
-        光脱毛マシーン
-      </h2>
-      <p class="machine__paragraph yugothic">
-        ZELMOの脱毛マシーンは濃くて太い男性の毛を<br />
-        無駄なく効率的に脱毛できるように開発された男性専用の光脱毛マシーンです。
-      </p>
-      <p class="machine__paragraph yugothic">
-        さらに、デリケートゾーン専用モードを搭載。<br />
-        他より痛みを感じやすいデリケートゾーンも、痛みが少ないのにパワフルに脱毛いたします。
-      </p>
-      <img src="img/machine.jpg" srcset="img/machine@2x.jpg" alt="最新の光脱毛マシーン" class="machine__image">
-      <h2 class="machine__heading">
-        光脱毛とレーザー脱毛の<strong class="machine__headingPrimary">比較</strong>
-      </h2>
-      <div class="machine__comparison">
-        <div class="machine__item">
-          <span>出力</span>
-          <span>痛み</span>
-          <span>肌負担</span>
-          <span>コスパ</span>
-        </div>
-        <div class="machine__specs -zelmo">
-          <span class="machine__specsHeading -zelmo">ZELMOの<br />光脱毛マシーン</span>
-          <div class="machine__evaluations">
-            <span class="machine__evaluation">○</span>
-            <span class="machine__evaluation">○</span>
-            <span class="machine__evaluation">◎</span>
-            <span class="machine__evaluation">◎</span>
-          </div>
-        </div>
-        <div class="machine__specs -medical">
-          <span class="machine__specsHeading -medical">医療用レーザー<br />脱毛マシーン</span>
-          <div class="machine__evaluations">
-            <span class="machine__evaluation">◎</span>
-            <span class="machine__evaluation">×</span>
-            <span class="machine__evaluation">×</span>
-            <span class="machine__evaluation">×</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="voice">
-      <h2 class="voice__heading">お客様の<strong class="voice__headingPrimary">声</strong></h2>
-      <!-- TODO 余裕があればHTMLでかく  -->
-    </section>
-    <section class="flow" id="flow">
-      <h2 class="flow__heading">特別体験の<strong class="flow__headingPrimary">流れ</strong></h2>
-      <ol class="flow__list">
-        <li class="flow__item">
-          <h3 class="flow__itemHeading">シェービング</h3>
-          <p class="flow__itemParagraph yugothic">来店当日に希望部位の剃毛（シェービング）をしてからご来店をお願いいたします。</p>
-        </li>
-        <li class="flow__item">
-          <h3 class="flow__itemHeading">カウンセリング</h3>
-          <p class="flow__itemParagraph yugothic">専門スタッフによるカウンセリングを行います。ご不安な点や疑問がございましたらお気軽にご相談ください。</p>
-        </li>
-        <li class="flow__item">
-          <h3 class="flow__itemHeading">施術</h3>
-          <p class="flow__itemParagraph yugothic">
-            肌、毛質、毛量をチェックし、お客様に合わせた照射を行います。冷却されたジェルは保湿、消炎、抗炎効果があるため、肌へのダメージや痛みを抑えて照射いたします。
-          </p>
-        </li>
-        <li class="flow__item">
-          <h3 class="flow__itemHeading">アフターカウンセリング</h3>
-          <p class="flow__itemParagraph yugothic">
-            脱毛を終えて生じた疑問などなんでもご質問ください。脱毛のプロがお客様の肌や毛のコンディションにあった脱毛プランのご提案や家でのケア方法などをアドバイスします。
-          </p>
-        </li>
-      </ol>
-    </section>
-    <section class="cta">
-      <h2 class="cta__heading">
-        <span class="cta__headingPrimary"><strong class="dot">初</strong><strong class="dot">回</strong><strong
-            class="dot">限</strong><strong class="dot">定</strong>！</span><br />
-        <span>格安特別脱毛体験！</span>
-      </h2>
-      <img src="img/cta_1.png" srcset="img/cta_1@2x.png 2x" alt="VIO ３ヶ所セット特別価格 9000円" class="cta__vio">
-      <span class="cta__plus"></span>
-      <img src="img/cta_2.png" srcset="img/cta_2@2x.png 2x" alt="Sパーツ2ヶ所 無料！ 0円" class="cta__sparts">
-      <div class="cta__links">
-        <div>
-          <a href="" class="linkButton -web">
-            <span class="linkButton__icon"><img src="img/icon_pc.png" alt=""></span>
-            <span class="linkButton__text">WEB予約</span>
-          </a>
-        </div>
-        <div>
-          <a href="" class="linkButton -tel">
-            <span class="linkButton__icon"><img src="img/icon_tel.png" alt=""></span>
-            <span class="linkButton__text">TEL予約</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="price">
-      <h2 class="price__heading">特別体験後の<br />
-        <strong class="price__headingPrimary">通常料金プラン</strong>
-      </h2>
-      <h3 class="price__subHeading">VIO脱毛</h3>
-      <ul class="price__vioList">
-        <li class="price__vioItem">
-          <img src="img/price_vio01.png" alt="Vライン(ビキニライン)" class="price__vioItemImage">
-          <span class="price__vioItemSpan">Vライン<br />（ビキニライン）</span>
-        </li>
-        <li class="price__vioItem">
-          <img src="img/price_vio02.png" alt="Iライン（玉・竿含む）" class="price__vioItemImage">
-          <span class="price__vioItemSpan">Iライン<br />（玉・竿含む）</span>
-        </li>
-        <li class="price__vioItem">
-          <img src="img/price_vio03.png" alt="Oライン（肛門周り）" class="price__vioItemImage">
-          <span class="price__vioItemSpan">Oライン<br />（肛門周り）</span>
-        </li>
-      </ul>
-      <table class="price__table -vio">
-        <tr>
-          <th class="price__parts">VIO</th>
-          <th>１ヶ所</th>
-          <th>２ヶ所</th>
-          <th>３ヶ所</th>
-        </tr>
-        <tr>
-          <th>1 回</th>
-          <td>5,850円</td>
-          <td>11,700円</td>
-          <td>13,000円</td>
-        </tr>
-      </table>
-      <div class="price__caution">
-        <small>※価格は全て税別です。</small>
-        <small>※価格は回数券（10回）をご利用いただいた場合の金額です。</small>
-      </div>
-      <h3 class="price__subHeading -other">VIO以外の人気脱毛</h3>
-      <ul class="price__otherList">
-        <li class="price__otherItem">
-          <img src="img/other01.png" alt="顔" class="price__otherItemImage">
-          <span class="price__otherItemSpan">顔</span>
-          <small class="price__otherItemSmall">
-            顎／顎裏／鼻下／両頬／<br />
-            両もみあげ／首／おでこ
-          </small>
-        </li>
-        <li class="price__otherItem">
-          <img src="img/other02.png" alt="体Sパーツ" class="price__otherItemImage">
-          <span class="price__otherItemSpan">体Sパーツ</span>
-          <small class="price__otherItemSmall">
-            手の甲指／足の甲指／<br />
-            乳首周り／脇／へそ下／肩
-          </small>
-        </li>
-        <li class="price__otherItem">
-          <img src="img/other03.png" alt="体Mパーツ" class="price__otherItemImage">
-          <span class="price__otherItemSpan">体Mパーツ</span>
-          <small class="price__otherItemSmall">
-            膝上／膝下／肘上／<br />
-            肘下／胸／腹／ヒップ／<br />
-            背中上／背中下（腰）
-          </small>
-        </li>
-        <li class="price__otherItem">
-          <img src="img/other04.png" alt="体Lパーツ" class="price__otherItemImage">
-          <span class="price__otherItemSpan">体Lパーツ</span>
-          <small class="price__otherItemSmall">
-            脚全体（甲指含）／<br />腕全体（甲指含）／<br />
-            背中全体／胸と腹セット
-          </small>
-        </li>
-      </ul>
-      <table class="price__table -other">
-        <tr>
-          <th class="price__parts">その他</th>
-          <th>顔</th>
-          <th>体Sパーツ</th>
-          <th>体Mパーツ</th>
-          <th>体Lパーツ</th>
-        </tr>
-        <tr>
-          <th>1 回</th>
-          <td>1,950円〜</td>
-          <td>1,950円〜</td>
-          <td>5,850円〜</td>
-          <td>10,400円〜</td>
-        </tr>
-      </table>
-      <div class="price__caution">
-        <small>※価格は全て税別です。</small>
-        <small>※価格は回数券（10回）をご利用いただいた場合の金額です。</small>
-      </div>
-    </section>
-    <section class="faq">
-      <h2 class="faq__heading">FAQ</h2>
-      <h3 class="faq__subHeading">よくあるご質問</h3>
-      <ol class="faq__list">
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">1</span></h4>
-            <p class="faq__question yugothic">何か持っていくものはありますか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            特に必要なものは原則ございません。<br />
-            ガウン、タオル、ゴーグルなど施術に必要なものは全てご用意しておりますので、当サロンまでお気軽にお越しください。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">2</span></h4>
-            <p class="faq__question yugothic">痛みを感じずに脱毛できますか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            個人差や部位差はございますが、ニードルやレーザーによる脱毛に比べますと痛みはかなり少ないという方がほとんどです。<br />
-            ゼルモは陰部などのデリケートゾーン専用モードを搭載した純国産の最新マシーンを導入し、VIOとその他部位でハンドピースを使い分けています。
-            他サロンではハンドピースも1本数十万するので同じものを使っているサロンが殆どです。<br />
-            また痛みの軽減をさらに徹底するために、施術前および施術後に冷却ジェルを塗布しますので、ご安心してご利用下さい。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">3</span></h4>
-            <p class="faq__question yugothic">施術スタッフは男性/女性どちらですか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            全て女性スタッフが施術を行います。<br />
-            高い技術を持った、男性VIO脱毛の経験豊富な女性スタッフばかりですので安心してご利用下さい。<br />
-            また施術時に緊張から勃起してしまうことを心配される方は多いのですが、意外と勃起しません。 もし勃起してしまったとしても生理現象ですし、スタッフにとっても良くあることですのでお気になさらないで下さい。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">4</span></h4>
-            <p class="faq__question yugothic">周りの目が気になりませんか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            【完全個室】の脱毛サロンですので、安心してご利用下さい。<br />
-            メンズ専門サロンですので、女性のお客様はいらっしゃいません。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">5</span></h4>
-            <p class="faq__question yugothic">効果が出るまで何回くらい通えばいい？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            【毛量、毛質、肌質により個人差はございますが、3〜4回の施術で自己処理が楽になり効果を実感できるお客様が多いようです。<br />
-            また、おしゃれやスタイルに敏感なお客様のリクエストにお応えして、毛量やデザインについてもご相談を承ります。カウンセリング時にご希望をお聞かせください。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">6</span></h4>
-            <p class="faq__question yugothic">未成年でも施術を受けられますか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            はい、可能です。<br />
-            未成年(20歳未満)のお客様は保護者の方に同伴していただくか、もしくは親権同意書が必要となります。<br />
-            ただし、思春期の男性の体毛は生え変わりのサイクル（毛周期）がまだ安定していないため、16歳以上からの脱毛をお願いしております。
-          </p>
-        </li>
-        <li class="faq__item">
-          <div class="faq__questionWrapper">
-            <h4 class="faq__itemQuestionNumber">Q<span class="faq__num">7</span></h4>
-            <p class="faq__question yugothic">強引な勧誘や押し売りはありませんか？</p>
-          </div>
-          <p class="faq__answer yugothic">
-            エステでよくある強引な勧誘や無理な押し売りは当サロンにはございません。<br />
-            当サロンでは、都度払いもしくは回数券をご利用いただけます。<br />
-            お客様自身にあったお支払い方法をご自由にお選びください。
-          </p>
-        </li>
-      </ol>
-    </section>
-    <section class="salon">
-      <h2 class="salon__heading">店舗情報</h2>
-      <div class="salon__infoWrapper">
-        <div class="salon__info yugothic">
-          <img src="img/salon_ebisu_image.jpg" alt="" class="salon__image">
-          <div class="salon__detail">
-            <img src="img/salon_ebisu.png" alt="ZELMO 恵比寿店" class="salon__logo">
-            <div class="salon__text">
-              <address class="salon__addresses">
-                <p class="salon__address">東京都渋谷区恵比寿西1-7-13スイングビル4F</p>
-                <button class="address-copy">住所をコピー</button>
-                <a href="" class="linkButton -salon">
-                  TEL:03-6455-2871
-                </a>
-              </address>
-              <span class="salon__businessHours">平日12:00～21:00(最終受付20:30)<br />
-                土日祝10:00～19:00(最終受付18:30)</span>
-              <span class="salon__station">最寄駅：「恵比寿駅」徒歩1分</span>
-            </div>
-          </div>
-        </div>
-        <div class="salon__mapWrapper">
-          <div class="salon__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.1974306741154!2d139.70710980392298!3d35.64787391270834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4172e8c9a3%3A0xc3fda8ffecc66173!2z44CSMTUwLTAwMjEg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_6KW_77yR5LiB55uu77yX4oiS77yR77yTIDRG!5e0!3m2!1sja!2sjp!4v1593701331377!5m2!1sja!2sjp"
-              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="salon__infoWrapper">
-        <div class="salon__info yugothic">
-          <img src="img/salon_ginza_image.jpg" alt="" class="salon__image">
-          <div class="salon__detail">
-            <img src="img/salon_ginza.png" alt="ZELMO 銀座店" class="salon__logo">
-            <div class="salon__text">
-              <address class="salon__addresses">
-                <p class="salon__address">東京都中央区銀座2-13-13久保ビル2F</p>
-                <button class="address-copy">住所をコピー</button>
-                <a href="" class="linkButton -salon">
-                  TEL:03-6260-6075
-                </a>
-              </address>
-              <span class="salon__businessHours">平日12:00～21:00(最終受付20:30)<br />
-                土日祝10:00～19:00(最終受付18:30)</span>
-              <span>最寄駅：「恵比寿駅」徒歩1分</span>
-              <span>「東銀座駅」A7出口徒歩2分</span>
-            </div>
-          </div>
-        </div>
-        <div class="salon__mapWrapper">
-          <div class="salon__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.9060521749857!2d139.76793365694238!3d35.670663528900974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be11d86f41d%3A0x3965610e6239d39!2z44CSMTA0LTAwNjEg5p2x5Lqs6YO95Lit5aSu5Yy66YqA5bqn77yS5LiB55uu77yR77yT4oiS77yR77yTIDJG!5e0!3m2!1sja!2sjp!4v1593703346874!5m2!1sja!2sjp"
-              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="form">
-      <h2 class="form__heading">特別体験<strong class="form__headingStrong">WEB予約フォーム</strong></h2>
-      <div class="form__inner">
-        <p class="form__lead">
-          下記フォームからの予約は仮予約です。当サロンから確認のご連絡を差し上げた時点でご予約確定となります。ご予約が重複する場合には、ご希望日時でのご案内が出来ない場合がございます。予め、ご了承ください。カウンセリングではVIO以外のご相談も承っております。体毛、脱毛のことでしたらご遠慮なく何でもお悩みをお聞かせ下さい。<br />
-          ※未成年の方は、親権者同意書が必要となります。
+      </section>
+      <section class="think">
+        <h2 class="think__heading">
+          <span class="think__headingSmall">「男のVIO脱毛ってどうなの？」</span
+          ><br />
+          <span class="think__headingLarge"
+            ><strong class="dot">女</strong
+            ><strong class="dot">性</strong></span
+          >に聞いてみました！
+        </h2>
+        <img
+          src="img/think.png"
+          srcset="img/think@2x.png"
+          alt=""
+          class="think__image"
+        />
+      </section>
+      <section class="reason" id="reason">
+        <h2 class="reason__heading">
+          ZELMOが選ばれる<span class="reason__headingPrimary"
+            ><strong class="dot">6</strong><strong class="dot">つ</strong
+            ><strong class="dot">の</strong><strong class="dot">理</strong
+            ><strong class="dot">由</strong></span
+          >
+        </h2>
+        <h3 class="reason__subHeading">男のためのラグジュアリー脱毛サロン</h3>
+        <p class="reason__lead yugothic">
+          男性の美に対する意識も年々高まっている中で、<br />
+          男性が「理想の自分に近づく」ためのサロンとして<br />
+          ZELMOがオープンしました。
         </p>
-        <form action="sendmail.php" method="post" id="form1" name="send">
-          <h2>お名前</h2>
-          <input type="text" name="custmername" class="validate[required]" data-prompt-position="bottomLeft"
-            placeholder="例):山本大介">
-          <h2>メールアドレス</h2>
-          <h2>電話番号<span>(ハイフンは不要です)</span></h2>
-          <input id="numonly" type="tel" name="phone" class="validate[required,custom[onlyLetterNumber]]"
-            data-prompt-position="bottomLeft" placeholder="例):0364552871">
-          <input type="email" id="mailadd" name="emailadd" value="" class="validate[required,custom[email]]"
-            data-prompt-position="bottomLeft" placeholder="例):info@zelmo.jp">
-          <h2>ご利用店舗</h2>
-          <div class="radio-wrap">
-            <div class="md-radio md-radio-inline">
-              <input id="salon1" type="radio" name="salon" value="恵比寿店" checked>
-              <label for="salon1">恵比寿店</label>
+        <p class="reason__lead yugothic">
+          施術を担当するのは、高い技術力を持った専門スタッフ。
+        </p>
+        <p class="reason__lead yugothic">
+          毛周期、脱毛知識、皮膚理論などの座学～実技研修を経ているため、<br />
+          安心して私達にお任せ下さい。
+        </p>
+        <ol class="reason__list">
+          <li class="reason__item">
+            <img src="img/reason01.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                純国産の最新メンズ脱毛器、<br />
+                確かな技術力
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                男性特有の濃く、太い毛に適した、純国産の強力なメンズ脱毛器を使用。毛周期、脱毛知識、皮膚理論などの座学～実技研修を経た、技術力のある専門スタッフが担当します。また、フェイシャル、アロママッサージも可能です。
+              </p>
             </div>
-            <div class="md-radio md-radio-inline">
-              <input id="salon2" type="radio" name="salon" value="銀座店">
-              <label for="salon2">銀座店<span class="newopen"></span></label>
+          </li>
+          <li class="reason__item">
+            <img src="img/reason02.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                完全個室の<br />
+                ラグジュアリーな空間
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                隠れ家をイメージした、ラグジュアリーなブルックリンスタイルの内装の中、リラックスした状態で施術をお受けいただけます。完全個室のメンズ脱毛サロンのため、プライバシーにも配慮されています。
+              </p>
+            </div>
+          </li>
+          <li class="reason__item">
+            <img src="img/reason03.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                業界最低水準の<br />
+                価格設定
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                ラグジュアリーな完全個室のメンズ脱毛サロンでありながら、業界最低水準の価格設定で、安心の保証システムも充実。また、通いやすい都度払いを採用していて、現金もしくはクレジットカードからお選びいただけます。
+              </p>
+            </div>
+          </li>
+          <li class="reason__item">
+            <img src="img/reason04.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                安心して通える<br />
+                保証システム
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                ゼルモの光脱毛の施術回数の目安は、約10回。11回目以降は、通常価格の70％OFFの施術を無期限でお受けいただけます。（※ヒゲのみ16回以降）
+              </p>
+            </div>
+          </li>
+          <li class="reason__item">
+            <img src="img/reason05.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                希望に合わせて選べる<br />
+                脱毛方法
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                ゼルモでは、光脱毛とワックス脱毛をどちらも受けることが可能。例えば、ヒゲは光脱毛で行い、VIOはワックス脱毛で行うなど、お客様のご希望に合わせた脱毛方法を選択していただけます。
+              </p>
+            </div>
+          </li>
+          <li class="reason__item">
+            <img src="img/reason06.jpg" alt="" />
+            <div class="reason__text">
+              <h4 class="reason__itemHeading">
+                男をワンランク上げる<br />
+                脱毛以外のメニュー
+              </h4>
+              <p class="reason__itemParagraph yugothic">
+                肌をワントーン明るくするフェイシャルや、日々の疲れや自律神経を整えるアロママッサージなど、男を磨くメニューを多く取り揃えています。
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="cta">
+        <h2 class="cta__heading">
+          <span class="cta__headingPrimary"
+            ><strong class="dot">初</strong><strong class="dot">回</strong
+            ><strong class="dot">限</strong
+            ><strong class="dot">定</strong>！</span
+          ><br />
+          <span>格安特別脱毛体験！</span>
+        </h2>
+        <img
+          src="img/cta_1.png"
+          srcset="img/cta_1@2x.png 2x"
+          alt="VIO ３ヶ所セット特別価格 9000円"
+          class="cta__vio"
+        />
+        <span class="cta__plus"></span>
+        <img
+          src="img/cta_2.png"
+          srcset="img/cta_2@2x.png 2x"
+          alt="Sパーツ2ヶ所 無料！ 0円"
+          class="cta__sparts"
+        />
+        <div class="cta__links">
+          <div>
+            <a href="#form" class="linkButton -web">
+              <span class="linkButton__icon"
+                ><img src="img/icon_pc.png" alt=""
+              /></span>
+              <span class="linkButton__text">WEB予約</span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="linkButton -tel">
+              <span class="linkButton__icon"
+                ><img src="img/icon_tel.png" alt=""
+              /></span>
+              <span class="linkButton__text">TEL予約</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="machine">
+        <h2 class="machine__heading">
+          <b class="machine__headingLarge">ZELMO</b>の<strong
+            class="machine__headingPrimary"
+            >男性専用</strong
+          ><br />
+          光脱毛マシーン
+        </h2>
+        <p class="machine__paragraph yugothic">
+          ZELMOの脱毛マシーンは濃くて太い男性の毛を<br />
+          無駄なく効率的に脱毛できるように開発された男性専用の光脱毛マシーンです。
+        </p>
+        <p class="machine__paragraph yugothic">
+          さらに、デリケートゾーン専用モードを搭載。<br />
+          他より痛みを感じやすいデリケートゾーンも、痛みが少ないのにパワフルに脱毛いたします。
+        </p>
+        <img
+          src="img/machine.jpg"
+          srcset="img/machine@2x.jpg"
+          alt="最新の光脱毛マシーン"
+          class="machine__image"
+        />
+        <h2 class="machine__heading">
+          光脱毛とレーザー脱毛の<strong class="machine__headingPrimary"
+            >比較</strong
+          >
+        </h2>
+        <div class="machine__comparison">
+          <div class="machine__item">
+            <span>出力</span>
+            <span>痛み</span>
+            <span>肌負担</span>
+            <span>コスパ</span>
+          </div>
+          <div class="machine__specs -zelmo">
+            <span class="machine__specsHeading -zelmo"
+              >ZELMOの<br />光脱毛マシーン</span
+            >
+            <div class="machine__evaluations">
+              <span class="machine__evaluation">○</span>
+              <span class="machine__evaluation">○</span>
+              <span class="machine__evaluation">◎</span>
+              <span class="machine__evaluation">◎</span>
             </div>
           </div>
-          <h2>第1希望日時</h2>
-          <input type="text" id="reserve-1" name="firstdate" class="validate[required]"
-            data-prompt-position="bottomLeft" readonly="readonly" placeholder="タップしてカレンダーから選択">
-          <h2>第2希望日時</h2>
-          <input type="text" id="reserve-2" name="seconddate" class="validate[required]"
-            data-prompt-position="bottomLeft" readonly="readonly" placeholder="タップしてカレンダーから選択">
-          <input type="image" alt="送信" src="./img/send-pre.png" class="btn" id="send_button" disabled="disabled">
-        </form>
-      </div>
-    </section>
-  </div>
-</body>
-
+          <div class="machine__specs -medical">
+            <span class="machine__specsHeading -medical"
+              >医療用レーザー<br />脱毛マシーン</span
+            >
+            <div class="machine__evaluations">
+              <span class="machine__evaluation">◎</span>
+              <span class="machine__evaluation">×</span>
+              <span class="machine__evaluation">×</span>
+              <span class="machine__evaluation">×</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="voice">
+        <h2 class="voice__heading">
+          お客様の<strong class="voice__headingPrimary">声</strong>
+        </h2>
+        <ul class="voice__list">
+          <li class="voice__item">
+            <img src="img/voice01.png" alt="" class="voice__image" />
+          </li>
+          <li class="voice__item">
+            <img src="img/voice02.png" alt="" class="voice__image" />
+          </li>
+          <li class="voice__item">
+            <img src="img/voice03.png" alt="" class="voice__image" />
+          </li>
+          <li class="voice__item">
+            <img src="img/voice04.png" alt="" class="voice__image" />
+          </li>
+          <li class="voice__item">
+            <img src="img/voice05.png" alt="" class="voice__image" />
+          </li>
+          <li class="voice__item">
+            <img src="img/voice06.png" alt="" class="voice__image" />
+          </li>
+        </ul>
+      </section>
+      <section class="flow" id="flow">
+        <h2 class="flow__heading">
+          特別体験の<strong class="flow__headingPrimary">流れ</strong>
+        </h2>
+        <ol class="flow__list">
+          <li class="flow__item">
+            <h3 class="flow__itemHeading">シェービング</h3>
+            <p class="flow__itemParagraph yugothic">
+              来店当日に希望部位の剃毛（シェービング）をしてからご来店をお願いいたします。
+            </p>
+          </li>
+          <li class="flow__item">
+            <h3 class="flow__itemHeading">カウンセリング</h3>
+            <p class="flow__itemParagraph yugothic">
+              専門スタッフによるカウンセリングを行います。ご不安な点や疑問がございましたらお気軽にご相談ください。
+            </p>
+          </li>
+          <li class="flow__item">
+            <h3 class="flow__itemHeading">施術</h3>
+            <p class="flow__itemParagraph yugothic">
+              肌、毛質、毛量をチェックし、お客様に合わせた照射を行います。冷却されたジェルは保湿、消炎、抗炎効果があるため、肌へのダメージや痛みを抑えて照射いたします。
+            </p>
+          </li>
+          <li class="flow__item">
+            <h3 class="flow__itemHeading">アフターカウンセリング</h3>
+            <p class="flow__itemParagraph yugothic">
+              脱毛を終えて生じた疑問などなんでもご質問ください。脱毛のプロがお客様の肌や毛のコンディションにあった脱毛プランのご提案や家でのケア方法などをアドバイスします。
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="cta">
+        <h2 class="cta__heading">
+          <span class="cta__headingPrimary"
+            ><strong class="dot">初</strong><strong class="dot">回</strong
+            ><strong class="dot">限</strong
+            ><strong class="dot">定</strong>！</span
+          ><br />
+          <span>格安特別脱毛体験！</span>
+        </h2>
+        <img
+          src="img/cta_1.png"
+          srcset="img/cta_1@2x.png 2x"
+          alt="VIO ３ヶ所セット特別価格 9000円"
+          class="cta__vio"
+        />
+        <span class="cta__plus"></span>
+        <img
+          src="img/cta_2.png"
+          srcset="img/cta_2@2x.png 2x"
+          alt="Sパーツ2ヶ所 無料！ 0円"
+          class="cta__sparts"
+        />
+        <div class="cta__links">
+          <div>
+            <a href="#form" class="linkButton -web">
+              <span class="linkButton__icon"
+                ><img src="img/icon_pc.png" alt=""
+              /></span>
+              <span class="linkButton__text">WEB予約</span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="linkButton -tel">
+              <span class="linkButton__icon"
+                ><img src="img/icon_tel.png" alt=""
+              /></span>
+              <span class="linkButton__text">TEL予約</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="price" id="price">
+        <h2 class="price__heading">
+          特別体験後の<br />
+          <strong class="price__headingPrimary">通常料金プラン</strong>
+        </h2>
+        <h3 class="price__subHeading">VIO脱毛</h3>
+        <ul class="price__vioList">
+          <li class="price__vioItem">
+            <img
+              src="img/price_vio01.png"
+              alt="Vライン(ビキニライン)"
+              class="price__vioItemImage"
+            />
+            <span class="price__vioItemSpan"
+              >Vライン<br />（ビキニライン）</span
+            >
+          </li>
+          <li class="price__vioItem">
+            <img
+              src="img/price_vio02.png"
+              alt="Iライン（玉・竿含む）"
+              class="price__vioItemImage"
+            />
+            <span class="price__vioItemSpan">Iライン<br />（玉・竿含む）</span>
+          </li>
+          <li class="price__vioItem">
+            <img
+              src="img/price_vio03.png"
+              alt="Oライン（肛門周り）"
+              class="price__vioItemImage"
+            />
+            <span class="price__vioItemSpan">Oライン<br />（肛門周り）</span>
+          </li>
+        </ul>
+        <table class="price__table -vio">
+          <tr>
+            <th class="price__parts">VIO</th>
+            <th>１ヶ所</th>
+            <th>２ヶ所</th>
+            <th>３ヶ所</th>
+          </tr>
+          <tr>
+            <th>1 回</th>
+            <td>5,850円</td>
+            <td>11,700円</td>
+            <td>13,000円</td>
+          </tr>
+        </table>
+        <div class="price__caution">
+          <small>※価格は全て税別です。</small>
+          <small>※価格は回数券（10回）をご利用いただいた場合の金額です。</small>
+        </div>
+        <h3 class="price__subHeading -other">VIO以外の人気脱毛</h3>
+        <ul class="price__otherList">
+          <li class="price__otherItem">
+            <img src="img/other01.png" alt="顔" class="price__otherItemImage" />
+            <span class="price__otherItemSpan">顔</span>
+            <small class="price__otherItemSmall">
+              顎／顎裏／鼻下／両頬／<br />
+              両もみあげ／首／おでこ
+            </small>
+          </li>
+          <li class="price__otherItem">
+            <img
+              src="img/other02.png"
+              alt="体Sパーツ"
+              class="price__otherItemImage"
+            />
+            <span class="price__otherItemSpan">体Sパーツ</span>
+            <small class="price__otherItemSmall">
+              手の甲指／足の甲指／<br />
+              乳首周り／脇／へそ下／肩
+            </small>
+          </li>
+          <li class="price__otherItem">
+            <img
+              src="img/other03.png"
+              alt="体Mパーツ"
+              class="price__otherItemImage"
+            />
+            <span class="price__otherItemSpan">体Mパーツ</span>
+            <small class="price__otherItemSmall">
+              膝上／膝下／肘上／<br />
+              肘下／胸／腹／ヒップ／<br />
+              背中上／背中下（腰）
+            </small>
+          </li>
+          <li class="price__otherItem">
+            <img
+              src="img/other04.png"
+              alt="体Lパーツ"
+              class="price__otherItemImage"
+            />
+            <span class="price__otherItemSpan">体Lパーツ</span>
+            <small class="price__otherItemSmall">
+              脚全体（甲指含）／<br />腕全体（甲指含）／<br />
+              背中全体／胸と腹セット
+            </small>
+          </li>
+        </ul>
+        <table class="price__table -other">
+          <tr>
+            <th class="price__parts">その他</th>
+            <th>顔</th>
+            <th>体Sパーツ</th>
+            <th>体Mパーツ</th>
+            <th>体Lパーツ</th>
+          </tr>
+          <tr>
+            <th>1 回</th>
+            <td>1,950円〜</td>
+            <td>1,950円〜</td>
+            <td>5,850円〜</td>
+            <td>10,400円〜</td>
+          </tr>
+        </table>
+        <div class="price__caution">
+          <small>※価格は全て税別です。</small>
+          <small>※価格は回数券（10回）をご利用いただいた場合の金額です。</small>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq__heading">FAQ</h2>
+        <h3 class="faq__subHeading">よくあるご質問</h3>
+        <ol class="faq__list">
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">1</span>
+              </h4>
+              <p class="faq__question yugothic">
+                何か持っていくものはありますか？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              特に必要なものは原則ございません。<br />
+              ガウン、タオル、ゴーグルなど施術に必要なものは全てご用意しておりますので、当サロンまでお気軽にお越しください。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">2</span>
+              </h4>
+              <p class="faq__question yugothic">
+                痛みを感じずに脱毛できますか？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              個人差や部位差はございますが、ニードルやレーザーによる脱毛に比べますと痛みはかなり少ないという方がほとんどです。<br />
+              ゼルモは陰部などのデリケートゾーン専用モードを搭載した純国産の最新マシーンを導入し、VIOとその他部位でハンドピースを使い分けています。
+              他サロンではハンドピースも1本数十万するので同じものを使っているサロンが殆どです。<br />
+              また痛みの軽減をさらに徹底するために、施術前および施術後に冷却ジェルを塗布しますので、ご安心してご利用下さい。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">3</span>
+              </h4>
+              <p class="faq__question yugothic">
+                施術スタッフは男性/女性どちらですか？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              全て女性スタッフが施術を行います。<br />
+              高い技術を持った、男性VIO脱毛の経験豊富な女性スタッフばかりですので安心してご利用下さい。<br />
+              また施術時に緊張から勃起してしまうことを心配される方は多いのですが、意外と勃起しません。
+              もし勃起してしまったとしても生理現象ですし、スタッフにとっても良くあることですのでお気になさらないで下さい。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">4</span>
+              </h4>
+              <p class="faq__question yugothic">周りの目が気になりませんか？</p>
+            </div>
+            <p class="faq__answer yugothic">
+              【完全個室】の脱毛サロンですので、安心してご利用下さい。<br />
+              メンズ専門サロンですので、女性のお客様はいらっしゃいません。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">5</span>
+              </h4>
+              <p class="faq__question yugothic">
+                効果が出るまで何回くらい通えばいい？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              【毛量、毛質、肌質により個人差はございますが、3〜4回の施術で自己処理が楽になり効果を実感できるお客様が多いようです。<br />
+              また、おしゃれやスタイルに敏感なお客様のリクエストにお応えして、毛量やデザインについてもご相談を承ります。カウンセリング時にご希望をお聞かせください。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">6</span>
+              </h4>
+              <p class="faq__question yugothic">
+                未成年でも施術を受けられますか？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              はい、可能です。<br />
+              未成年(20歳未満)のお客様は保護者の方に同伴していただくか、もしくは親権同意書が必要となります。<br />
+              ただし、思春期の男性の体毛は生え変わりのサイクル（毛周期）がまだ安定していないため、16歳以上からの脱毛をお願いしております。
+            </p>
+          </li>
+          <li class="faq__item">
+            <div class="faq__questionWrapper">
+              <h4 class="faq__itemQuestionNumber">
+                Q<span class="faq__num">7</span>
+              </h4>
+              <p class="faq__question yugothic">
+                強引な勧誘や押し売りはありませんか？
+              </p>
+            </div>
+            <p class="faq__answer yugothic">
+              エステでよくある強引な勧誘や無理な押し売りは当サロンにはございません。<br />
+              当サロンでは、都度払いもしくは回数券をご利用いただけます。<br />
+              お客様自身にあったお支払い方法をご自由にお選びください。
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="salon" id="salon">
+        <h2 class="salon__heading">店舗情報</h2>
+        <div class="salon__infoWrapper">
+          <div class="salon__info yugothic">
+            <img src="img/salon_ebisu_image.jpg" alt="" class="salon__image" />
+            <div class="salon__detail">
+              <img
+                src="img/salon_ebisu.png"
+                alt="ZELMO 恵比寿店"
+                class="salon__logo"
+              />
+              <div class="salon__text">
+                <address class="salon__addresses">
+                  <p class="salon__address">
+                    東京都渋谷区恵比寿西1-7-13スイングビル4F
+                  </p>
+                  <button class="address-copy -ebisu">住所をコピー</button>
+                  <a href="" class="linkButton -salon">
+                    TEL:03-6455-2871
+                  </a>
+                </address>
+                <span class="salon__businessHours"
+                  >平日12:00～21:00(最終受付20:30)<br />
+                  土日祝10:00～19:00(最終受付18:30)</span
+                >
+                <span class="salon__station">最寄駅：「恵比寿駅」徒歩1分</span>
+              </div>
+            </div>
+          </div>
+          <div class="salon__mapWrapper">
+            <div class="salon__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.1974306741154!2d139.70710980392298!3d35.64787391270834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4172e8c9a3%3A0xc3fda8ffecc66173!2z44CSMTUwLTAwMjEg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_6KW_77yR5LiB55uu77yX4oiS77yR77yTIDRG!5e0!3m2!1sja!2sjp!4v1593701331377!5m2!1sja!2sjp"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="salon__infoWrapper">
+          <div class="salon__info yugothic">
+            <img src="img/salon_ginza_image.jpg" alt="" class="salon__image" />
+            <div class="salon__detail">
+              <img
+                src="img/salon_ginza.png"
+                alt="ZELMO 銀座店"
+                class="salon__logo"
+              />
+              <div class="salon__text">
+                <address class="salon__addresses">
+                  <p class="salon__address">
+                    東京都中央区銀座2-13-13久保ビル2F
+                  </p>
+                  <button class="address-copy -ginza">住所をコピー</button>
+                  <a href="" class="linkButton -salon">
+                    TEL:03-6260-6075
+                  </a>
+                </address>
+                <span class="salon__businessHours"
+                  >平日12:00～21:00(最終受付20:30)<br />
+                  土日祝10:00～19:00(最終受付18:30)</span
+                >
+                <span>最寄駅：「恵比寿駅」徒歩1分</span>
+                <span>「東銀座駅」A7出口徒歩2分</span>
+              </div>
+            </div>
+          </div>
+          <div class="salon__mapWrapper">
+            <div class="salon__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.9060521749857!2d139.76793365694238!3d35.670663528900974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be11d86f41d%3A0x3965610e6239d39!2z44CSMTA0LTAwNjEg5p2x5Lqs6YO95Lit5aSu5Yy66YqA5bqn77yS5LiB55uu77yR77yT4oiS77yR77yTIDJG!5e0!3m2!1sja!2sjp!4v1593703346874!5m2!1sja!2sjp"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form" id="form">
+        <h2 class="form__heading">
+          特別体験<strong class="form__headingPrimary">WEB予約フォーム</strong>
+        </h2>
+        <div class="form__inner">
+          <p class="form__lead yugothic">
+            下記フォームからの予約は仮予約です。当サロンから確認のご連絡を差し上げた時点でご予約確定となります。ご予約が重複する場合には、ご希望日時でのご案内が出来ない場合がございます。予め、ご了承ください。カウンセリングではVIO以外のご相談も承っております。体毛、脱毛のことでしたらご遠慮なく何でもお悩みをお聞かせ下さい。<br />
+            ※未成年の方は、親権者同意書が必要となります。
+          </p>
+          <form
+            action="sendmail.php"
+            method="post"
+            id="form1"
+            name="send"
+            class="form__inputForm"
+          >
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                お名前<span class="form__required">*</span>
+              </h2>
+              <input
+                type="text"
+                name="custmername"
+                required
+                data-prompt-position="bottomLeft"
+                placeholder="お名前をご記入ください"
+              />
+            </div>
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                メールアドレス<span class="form__required">*</span>
+              </h2>
+              <input
+                type="email"
+                id="mailadd"
+                name="emailadd"
+                value=""
+                placeholder="メールアドレスをご記入ください"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required
+              />
+            </div>
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                電話番号<span class="form__required">*</span>
+              </h2>
+              <input
+                id="numonly"
+                type="tel"
+                name="phone"
+                placeholder="ハイフンは不要です"
+                pattern="\d{2,4}-?\d{3,4}-?\d{3,4}"
+                title="電話番号"
+                required
+              />
+            </div>
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                ご利用店舗<span class="form__required">*</span>
+              </h2>
+              <div class="salon__selector">
+                <select name="salon" id="" required>
+                  <option value="" selected
+                    >ご利用店舗を選択してください</option
+                  >
+                  <option id="salon1" value="恵比寿店">恵比寿店</option>
+                  <option id="salon2" value="銀座店">銀座店</option>
+                </select>
+              </div>
+              <!-- <div class="radio-wrap">
+                <div class="md-radio md-radio-inline">
+                  <input
+                    id="salon1"
+                    type="radio"
+                    name="salon"
+                    value="恵比寿店"
+                    checked
+                  />
+                  <label for="salon1">恵比寿店</label>
+                </div>
+                <div class="md-radio md-radio-inline">
+                  <input id="salon2" type="radio" name="salon" value="銀座店" />
+                  <label for="salon2"
+                    >銀座店<span class="newopen"></span
+                  ></label>
+                </div>
+              </div> -->
+            </div>
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                第1希望日時<span class="form__required">*</span>
+              </h2>
+              <input
+                type="text"
+                id="reserve-1"
+                name="firstdate"
+                placeholder="第1希望日時をご記入ください"
+                required
+              />
+            </div>
+            <div class="form__item yugothic">
+              <h2 class="form__itemName">
+                第2希望日時<span class="form__required">*</span>
+              </h2>
+              <input
+                type="text"
+                id="reserve-2"
+                name="seconddate"
+                placeholder="第2希望日時をご記入ください"
+                required
+              />
+            </div>
+            <div class="form__sendButtonWrapper">
+              <button type="submit" class="form__sendButton" id="send_button">
+                送信
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <img src="img/footer_logo.png" alt="ZELMOロゴ" class="footer__logo" />
+      </footer>
+    </div>
+  </body>
 </html>
