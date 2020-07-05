@@ -128,6 +128,17 @@ $(function () {
   });
 });
 
+// タブレット以下のハンバーガーメニュー開閉
+$(function () {
+  $(".header__hammenu").on("click", function () {
+    $(this).next().toggle();
+  });
+
+  $(".header__navItem .header__navLink").on("click", function () {
+    $(".header__navList").toggle();
+  });
+});
+
 var $elem = $(".js-image-switch");
 var sp = "-sp.";
 var pc = "-pc.";
@@ -140,8 +151,10 @@ function imageSwitch() {
     var $this = $(this);
     if (windowWidth >= replaceWidth) {
       $this.attr("src", $this.attr("src").replace(sp, pc));
+      $this.attr("srcset", $this.attr("src").replace(sp, pc));
     } else {
       $this.attr("src", $this.attr("src").replace(pc, sp));
+      $this.attr("srcset", $this.attr("src").replace(pc, sp));
     }
   });
 }

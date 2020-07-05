@@ -6,6 +6,10 @@
     Verdana, Meiryo, sans-serif;
 }
 
+.-sp {
+  display: none;
+}
+
 .linkButton {
   display: flex;
   justify-content: center;
@@ -285,6 +289,68 @@
       position: absolute;
       left: calc(50% + 22px);
       transform: translateX(-50%);
+    }
+  }
+
+  .dot {
+    &::before {
+      width: 6px;
+      height: 6px;
+      top: -12px;
+    }
+  }
+}
+
+@include mq(mobile) {
+  .-sp {
+    display: block;
+  }
+
+  .address-copy {
+    margin-top: 16px;
+  }
+
+  .linkButton {
+    &.-salon {
+      display: block;
+      text-align: center;
+      pointer-events: auto;
+      margin: 8px 0 0;
+    }
+
+    &__text {
+      left: 80%;
+      margin-left: 0;
+      width: 70%;
+    }
+  }
+
+  .modal {
+    &__content {
+      width: 90%;
+      top: calc(50% - 24px);
+      padding: 32px 8px;
+    }
+
+    &__logo {
+      width: 36%;
+    }
+
+    &__paragraph {
+      font-size: 25px;
+    }
+
+    &__shopName {
+      font-size: 20px;
+    }
+
+    &__tel {
+      font-size: 20px;
+    }
+
+    &__icon {
+      width: 24px;
+      margin-right: 12px;
     }
   }
 }

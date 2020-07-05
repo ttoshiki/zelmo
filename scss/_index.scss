@@ -176,17 +176,19 @@
     img {
       position: relative;
       z-index: 100;
+      width: 44.64%;
     }
 
     &:not(:first-child) {
-      margin-top: 120px;
     }
 
     &:nth-child(odd) {
+      margin-top: clamp(120px, 20vw, 130px);
+
       .reason__text {
         background-color: $gold;
-        left: 200px;
-        padding: 24px 56px 0 360px;
+        left: 18%;
+        padding: 24px 5% 48px 32.14%;
 
         &::before {
           right: 48px;
@@ -196,6 +198,8 @@
     }
 
     &:nth-child(even) {
+      margin-top: clamp(120px, 20vw, 130px);
+
       img {
         display: block;
         margin: 0 0 0 auto;
@@ -203,9 +207,9 @@
 
       .reason__text {
         background-color: $gray;
-        padding: 24px 360px 0 56px;
+        padding: 24px 32.14% 48px 5%;
         left: 0;
-        width: 920px;
+        width: 82.14%;
 
         &::before {
           left: 48px;
@@ -234,7 +238,7 @@
 
   &__itemHeading {
     color: $white;
-    font-size: 27px;
+    font-size: clamp(20px, 2vw, 27px);
     font-weight: 300;
     line-height: 1.85;
     letter-spacing: 6px;
@@ -244,7 +248,7 @@
   }
 
   &__itemParagraph {
-    font-size: 17px;
+    font-size: clamp(15px, 1.4vw, 17px);
     line-height: 1.8;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -263,7 +267,7 @@
     letter-spacing: 1px;
 
     &:not(:first-of-type) {
-      margin-top: 100px;
+      margin-top: 80px;
     }
   }
 
@@ -284,11 +288,17 @@
     }
   }
 
-  &__image {
-    display: block;
-    width: 80%;
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 100px auto 0;
+    width: 80%;
     max-width: 1060px;
+  }
+
+  &__image {
+    width: 50%;
   }
 
   &__comparison {
@@ -728,6 +738,7 @@
     width: 96%;
     margin: 48px auto 0;
     max-width: 1120px;
+    overflow: hidden;
 
     &:not(:first-of-type) {
       margin-top: 188px;
@@ -960,5 +971,714 @@
   &__logo {
     width: 50%;
     max-width: 142px;
+  }
+}
+
+@include mq(tab) {
+  .cta {
+    &__linksWrapper {
+      .linkButton {
+        height: 64px;
+
+        &.-tel {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+
+  .reason {
+    &__text {
+      &::before {
+        font-size: 160px;
+        top: -96px;
+        letter-spacing: -6px;
+      }
+    }
+
+    &__list {
+      margin: 80px auto 0;
+    }
+
+    &__item {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:nth-child(odd) {
+        .reason__text {
+          padding: 24px 4% 48px 30.14%;
+
+          &::before {
+            right: 40px;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: clamp(120px, 36vw, 212px);
+      }
+    }
+
+    &__itemHeading {
+      font-size: clamp(16px, 2.13vw, 27px);
+    }
+
+    &__itemParagraph {
+      font-size: clamp(13px, 1.4vw, 17px);
+    }
+  }
+
+  .salon {
+    &__infoWrapper {
+      &:not(:first-of-type) {
+        margin-top: 120px;
+      }
+    }
+
+    &__info {
+      margin: 0 auto;
+    }
+
+    &__mapWrapper {
+      margin: 0 auto;
+      position: relative;
+      left: 0;
+      top: 0;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    &__map {
+      padding-bottom: 75%;
+
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include mq(mobile) {
+  .cta {
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__vio,
+    &__sparts {
+      min-width: auto;
+      width: 88%;
+    }
+
+    &__vio {
+      margin-top: 28px;
+    }
+
+    &__plus {
+      height: 48px;
+      margin: 28px 0;
+
+      &::after {
+        width: 48px;
+      }
+    }
+
+    &__links {
+      flex-direction: column;
+      margin-top: 56px;
+
+      .linkButton {
+        width: 62%;
+        margin: 0 auto;
+        font-size: 18px;
+        height: 64px;
+
+        &.-tel {
+          margin: 36px auto 0;
+        }
+
+        &__text {
+          min-width: 92px;
+        }
+      }
+    }
+  }
+
+  .merit {
+    padding: 80px 0;
+
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__subHeading {
+      font-size: 24px;
+      margin: 12px 0 0;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin: 32px auto 0;
+    }
+
+    &__item {
+      width: 88%;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 0 20px 32px;
+
+      &:not(:first-child) {
+        margin: 32px auto 0;
+      }
+
+      &:nth-child(3) {
+        img {
+          width: 60%;
+        }
+      }
+    }
+
+    &__itemHeading {
+      margin: 10% auto 0;
+      height: auto;
+      font-size: 20px;
+    }
+
+    &__itemParagraph {
+      font-size: 14px;
+    }
+
+    &__itemImageWrapper {
+      margin: 32px auto 0;
+    }
+  }
+
+  .think {
+    padding: 48px 0;
+
+    &__heading {
+      font-size: 25px;
+      line-height: 1.9;
+    }
+
+    &__headingSmall {
+      font-size: 20px;
+    }
+
+    &__headingLarge {
+      font-size: 30px;
+    }
+
+    &__image {
+      margin: 24px auto 0;
+      max-width: 420px;
+    }
+  }
+
+  .reason {
+    padding: 48px 0;
+
+    &__heading {
+      font-size: 25px;
+      line-height: 1.9;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__subHeading {
+      font-size: 24px;
+      margin: 16px 0 0;
+    }
+
+    &__lead {
+      padding: 0 16px;
+      margin: 40px auto 0;
+      font-size: 15px;
+
+      &:not(:first-of-type) {
+        margin: 24px auto 0;
+      }
+    }
+
+    &__list {
+      width: 88%;
+      margin: 60px auto 0;
+    }
+
+    &__item {
+      img {
+        width: 64%;
+      }
+
+      &:nth-child(odd) {
+        .reason__text {
+          padding: 48px 20px 32px;
+          left: 6%;
+
+          &::before {
+            right: -8px;
+            top: -66px;
+          }
+        }
+      }
+
+      &:nth-child(odd):not(:first-child) {
+        margin-top: 300px;
+      }
+
+      &:nth-child(even) {
+        margin-top: 320px;
+
+        .reason__text {
+          padding: 48px 20px 32px;
+          width: 95%;
+
+          &::before {
+            left: -12px;
+            top: -68px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        margin-top: 300px;
+      }
+
+      &:nth-child(5):not(:first-child) {
+        margin-top: 280px;
+      }
+
+      &:nth-child(6) {
+        margin-top: 300px;
+        margin-bottom: 240px;
+      }
+    }
+
+    &__itemHeading {
+      letter-spacing: 4px;
+    }
+
+    &__text {
+      min-height: auto;
+      top: 81%;
+
+      &::before {
+        font-size: 110px;
+      }
+    }
+  }
+
+  .machine {
+    padding: 64px 0;
+
+    &__heading {
+      font-size: 25px;
+
+      &:not(:first-of-type) {
+        margin-top: 64px;
+      }
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__paragraph {
+      margin: 40px 0 0;
+      padding: 0 16px;
+      font-size: 16px;
+    }
+
+    &__picture {
+      margin: 12px auto 0;
+      flex-direction: column;
+      width: 88%;
+    }
+
+    &__image {
+      width: 96%;
+
+      &:not(:first-of-type) {
+        margin-top: 40px;
+      }
+    }
+
+    &__comparison {
+      width: 88%;
+      margin: 108px auto 0;
+    }
+
+    &__item {
+      flex-direction: column;
+
+      span {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        height: 102px;
+        padding: 0 0 0 18px;
+        margin: 0;
+        font-size: 16px;
+        text-align: left;
+        writing-mode: vertical-rl;
+
+        &:not(:first-child) {
+          margin-top: 4px;
+        }
+
+        &:nth-child(3) {
+          letter-spacing: 2px;
+        }
+
+        &:last-child {
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    &__specs {
+      display: block;
+      width: 40%;
+      height: calc(100% + 80px);
+
+      &.-zelmo {
+        top: -80px;
+        left: auto;
+        right: 42%;
+      }
+
+      &.-medical {
+        top: -80px;
+        bottom: auto;
+        right: 0;
+      }
+    }
+
+    &__specsHeading {
+      font-size: 16px;
+      padding: 16px 2px;
+    }
+
+    &__evaluations {
+      grid-template-rows: 102px 102px 102px 102px;
+      grid-template-columns: auto;
+    }
+  }
+
+  .voice {
+    padding: 60px 0;
+
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__list {
+      margin: 24px auto 0;
+    }
+
+    &__item {
+      width: 50%;
+    }
+  }
+
+  .flow {
+    padding: 60px 0;
+
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__list {
+      width: 88%;
+      margin: 64px auto 0;
+    }
+
+    &__item {
+      padding: 20px 4% 28px 24%;
+
+      &::before {
+        font-size: 88px;
+        top: -46px;
+        left: 8px;
+      }
+    }
+
+    &__itemHeading {
+      font-size: 22px;
+    }
+
+    &__itemParagraph {
+      font-size: 15px;
+    }
+  }
+
+  .price {
+    padding: 60px 0;
+
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__subHeading {
+      font-size: 24px;
+      margin: 24px 0 0;
+    }
+
+    &__vioItem {
+      width: 33%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__vioItemSpan {
+      font-size: 18px;
+    }
+
+    &__table {
+      margin: 32px auto 0;
+      font-size: 20px;
+
+      th,
+      &.-other th {
+        width: 49vw;
+      }
+
+      td {
+        width: 49vw;
+        border: 2px solid #ae960e;
+      }
+    }
+
+    &__caution {
+      small {
+        font-size: 12px;
+      }
+    }
+
+    &__otherList {
+      flex-wrap: wrap;
+    }
+
+    &__otherItem {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: 24px;
+      }
+    }
+
+    &__otherItemSpan {
+      font-size: 18px;
+    }
+
+    &__otherItemSmall {
+      font-size: 13px;
+    }
+  }
+
+  .faq {
+    padding: 60px 0;
+
+    &__heading {
+      font-size: 32px;
+    }
+
+    &__subHeading {
+      font-size: 22px;
+    }
+
+    &__itemQuestionNumber {
+      font-size: 44px;
+    }
+
+    &__num {
+      font-size: 28px;
+      margin-left: 12px;
+    }
+
+    &__questionWrapper {
+      padding: 8px 32px 20px 12px;
+    }
+
+    &__question {
+      margin: 16px 0 0 24px;
+      font-size: 16px;
+    }
+
+    &__iconHorizontal {
+      right: 12px;
+    }
+
+    &__iconVertical {
+      top: 44%;
+      right: 19px;
+    }
+
+    &__answer {
+      padding: 0 24px 24px;
+    }
+  }
+
+  .salon {
+    padding: 60px 0 80px;
+
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__infoWrapper {
+      width: 100%;
+      margin: 32px auto 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__detail {
+      flex-direction: column;
+    }
+
+    &__logo {
+      max-width: 160px;
+    }
+
+    &__text {
+      padding-left: 0;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    &__addresses {
+      text-align: center;
+    }
+
+    &__address {
+      margin: 16px 0 0;
+      font-size: 15px;
+      margin: 24px 0 0;
+    }
+
+    &__businessHours {
+      display: block;
+      text-align: center;
+    }
+
+    &__station {
+      margin: 0;
+      text-align: center;
+    }
+
+    &__mapWrapper {
+      width: 100%;
+    }
+
+    &__map {
+      padding-bottom: 59.47%;
+    }
+
+    &__ingo {
+      padding-bottom: 32px;
+    }
+
+    &__infoWrapper {
+      &:not(:first-of-type) {
+        margin-top: 100px;
+      }
+    }
+
+    &__selector {
+      width: 100%;
+    }
+  }
+
+  .form {
+    padding: 60px 0;
+
+    &__heading {
+      font-size: 25px;
+    }
+
+    &__headingPrimary {
+      font-size: 30px;
+    }
+
+    &__inner {
+      width: 88%;
+      margin: 32px auto 0;
+      padding: 32px 24px;
+    }
+
+    &__inputForm {
+      margin: 32px 0 0;
+    }
+
+    &__item {
+      flex-direction: column;
+      align-items: flex-start;
+
+      input,
+      select {
+        width: 100%;
+      }
+    }
+
+    &__itemName {
+      margin-bottom: 8px;
+    }
+
+    &__sendButtonWrapper {
+      margin: 48px auto 0;
+    }
+
+    &__sendButton {
+      width: 100%;
+      padding: 16px 0;
+      font-size: 20px;
+    }
+  }
+
+  .footer {
+    padding: 24px 0;
+
+    &__logo {
+      width: 20%;
+    }
   }
 }

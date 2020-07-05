@@ -67,9 +67,18 @@
       display: flex;
       position: sticky;
       bottom: 0;
+      z-index: 100;
 
       &.-pc {
         display: none;
+      }
+    }
+
+    &__navLink {
+      margin-right: 4px;
+
+      .linkButton {
+        background-color: $gold;
       }
     }
 
@@ -112,13 +121,71 @@
       }
     }
 
+    &__catch {
+      padding-top: 2vw;
+    }
+
     &__navList {
       display: none;
+      position: absolute;
+      bottom: 33px;
+      right: 0;
+      width: 61%;
+      background-color: rgba(174, 150, 14, 0.9);
+      border: 2px solid $white;
+      padding: 20px 24px;
     }
 
     &__navLink {
       width: 48%;
       height: 48px;
+    }
+
+    &__navList {
+      // hamburger menu
+      .header__navLink {
+        padding: 12px 0;
+        border-bottom: 1px solid #fff;
+        height: auto;
+        display: block;
+        width: 100%;
+        position: relative;
+        font-size: 15px;
+
+        &::after {
+          content: "";
+          background-image: url(../img/icon_angle-light.png);
+          background-size: cover;
+          width: 7px;
+          height: 12px;
+          position: absolute;
+          right: 0;
+          top: 35%;
+        }
+      }
+    }
+
+    &__navItem {
+      &:first-child {
+        .header__navLink {
+          border-top: 1px solid $white;
+        }
+      }
+
+      &:last-child {
+        .header__navLink {
+          &::before {
+            content: "";
+            background-image: url(../img/icon_present-light.png);
+            background-size: cover;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: text-bottom;
+          }
+        }
+      }
     }
   }
 }
