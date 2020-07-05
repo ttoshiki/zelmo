@@ -120,10 +120,14 @@ $(".faq__questionWrapper").click(function () {
 $(function () {
   $(".linkButton.-tel").on("click", function () {
     $(".js-modal").fadeIn();
+    scrollPosition = $(window).scrollTop();
+    $("body").addClass("fixed").css({ top: -scrollPosition });
     return false;
   });
   $(".js-modal-close").on("click", function () {
     $(".js-modal").fadeOut();
+    $("body").removeClass("fixed").css({ top: 0 });
+    window.scrollTo(0, scrollPosition);
     return false;
   });
 });
@@ -135,7 +139,7 @@ $(function () {
   });
 
   $(".header__navItem .header__navLink").on("click", function () {
-    $(".header__navList").toggle();
+    $(".header__navList.-spMenu").toggle();
   });
 });
 

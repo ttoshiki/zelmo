@@ -18,6 +18,13 @@ body {
   counter-reset: reason flow;
 }
 
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
 ul,
 ol {
   list-style: none;
@@ -33,6 +40,10 @@ a {
 }
 
 .-sp {
+  display: none;
+}
+
+.-tab {
   display: none;
 }
 
@@ -291,6 +302,9 @@ a {
   .-pc {
     display: none;
   }
+  .-tab {
+    display: block;
+  }
   .linkButton {
     position: relative;
     justify-content: flex-start;
@@ -315,6 +329,9 @@ a {
     height: 6px;
     top: -12px;
   }
+  .modal__tel {
+    pointer-events: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -335,9 +352,12 @@ a {
     margin-left: 0;
     width: 70%;
   }
+  .modal {
+    z-index: 200;
+  }
   .modal__content {
     width: 90%;
-    top: calc(50% - 24px);
+    top: calc(50% - 39px);
     padding: 32px 8px;
   }
   .modal__logo {
@@ -1109,6 +1129,7 @@ a {
   border: 1px solid #ae960e;
   color: #ae960e;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .price__table.-other {
@@ -1257,6 +1278,7 @@ a {
 .salon {
   background-color: #3a3531;
   padding: 100px 0 192px;
+  overflow-x: hidden;
 }
 
 .salon__infoWrapper {
@@ -1264,7 +1286,6 @@ a {
   width: 96%;
   margin: 48px auto 0;
   max-width: 1120px;
-  overflow: hidden;
 }
 
 .salon__infoWrapper:not(:first-of-type) {
@@ -1532,6 +1553,18 @@ a {
   .reason__itemParagraph {
     font-size: clamp(13px, 1.4vw, 17px);
   }
+  .price__table {
+    margin: 32px auto 0;
+    font-size: 20px;
+  }
+  .price__table th,
+  .price__table.-other th {
+    width: 49vw;
+  }
+  .price__table td {
+    width: 49vw;
+    border: 2px solid #ae960e;
+  }
   .salon__infoWrapper:not(:first-of-type) {
     margin-top: 120px;
   }
@@ -1555,6 +1588,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .cta {
+    padding: 64px 0;
+  }
   .cta__heading {
     font-size: 25px;
   }
@@ -1566,7 +1602,7 @@ a {
     width: 88%;
   }
   .cta__vio {
-    margin-top: 28px;
+    margin-top: 20px;
   }
   .cta__plus {
     height: 48px;
@@ -1586,7 +1622,7 @@ a {
     height: 64px;
   }
   .cta__links .linkButton.-tel {
-    margin: 36px auto 0;
+    margin: 32px auto 0;
   }
   .cta__links .linkButton__text {
     min-width: 92px;
@@ -1861,18 +1897,6 @@ a {
   }
   .price__vioItemSpan {
     font-size: 18px;
-  }
-  .price__table {
-    margin: 32px auto 0;
-    font-size: 20px;
-  }
-  .price__table th,
-  .price__table.-other th {
-    width: 49vw;
-  }
-  .price__table td {
-    width: 49vw;
-    border: 2px solid #ae960e;
   }
   .price__caution small {
     font-size: 12px;

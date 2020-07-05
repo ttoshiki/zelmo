@@ -10,6 +10,10 @@
   display: none;
 }
 
+.-tab {
+  display: none;
+}
+
 .linkButton {
   display: flex;
   justify-content: center;
@@ -267,6 +271,10 @@
     display: none;
   }
 
+  .-tab {
+    display: block;
+  }
+
   .linkButton {
     position: relative;
     justify-content: flex-start;
@@ -299,6 +307,12 @@
       top: -12px;
     }
   }
+
+  .modal {
+    &__tel {
+      pointer-events: auto;
+    }
+  }
 }
 
 @include mq(mobile) {
@@ -326,9 +340,11 @@
   }
 
   .modal {
+    z-index: 200;
+
     &__content {
       width: 90%;
-      top: calc(50% - 24px);
+      top: calc(50% - 39px);
       padding: 32px 8px;
     }
 

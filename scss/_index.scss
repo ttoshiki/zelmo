@@ -582,6 +582,7 @@
       border: 1px solid $gold;
       color: $gold;
       text-align: center;
+      letter-spacing: 1px;
     }
 
     &.-other {
@@ -732,13 +733,13 @@
 .salon {
   background-color: #3a3531;
   padding: 100px 0 192px;
+  overflow-x: hidden;
 
   &__infoWrapper {
     position: relative;
     width: 96%;
     margin: 48px auto 0;
     max-width: 1120px;
-    overflow: hidden;
 
     &:not(:first-of-type) {
       margin-top: 188px;
@@ -1029,6 +1030,23 @@
     }
   }
 
+  .price {
+    &__table {
+      margin: 32px auto 0;
+      font-size: 20px;
+
+      th,
+      &.-other th {
+        width: 49vw;
+      }
+
+      td {
+        width: 49vw;
+        border: 2px solid #ae960e;
+      }
+    }
+  }
+
   .salon {
     &__infoWrapper {
       &:not(:first-of-type) {
@@ -1061,6 +1079,8 @@
 
 @include mq(mobile) {
   .cta {
+    padding: 64px 0;
+
     &__heading {
       font-size: 25px;
     }
@@ -1076,7 +1096,7 @@
     }
 
     &__vio {
-      margin-top: 28px;
+      margin-top: 20px;
     }
 
     &__plus {
@@ -1099,7 +1119,7 @@
         height: 64px;
 
         &.-tel {
-          margin: 36px auto 0;
+          margin: 32px auto 0;
         }
 
         &__text {
@@ -1458,21 +1478,6 @@
 
     &__vioItemSpan {
       font-size: 18px;
-    }
-
-    &__table {
-      margin: 32px auto 0;
-      font-size: 20px;
-
-      th,
-      &.-other th {
-        width: 49vw;
-      }
-
-      td {
-        width: 49vw;
-        border: 2px solid #ae960e;
-      }
     }
 
     &__caution {
