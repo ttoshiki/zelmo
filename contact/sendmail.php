@@ -1,7 +1,6 @@
 <?php
 
-// $Referer_check_domain = "zelmo.jp";
-$Referer_check_domain = "ytzbr1.sakura.ne.jp";
+$Referer_check_domain = "zelmo.jp";
 $funcRefererCheck = refererCheck(0,$Referer_check_domain);//
 
 usleep(300000);

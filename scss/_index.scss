@@ -1201,6 +1201,7 @@
     &__image {
       margin: 24px auto 0;
       max-width: 420px;
+      width: 88%;
     }
   }
 
@@ -1477,7 +1478,7 @@
     }
 
     &__vioItemSpan {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     &__caution {
@@ -1601,6 +1602,11 @@
     }
 
     &__businessHours {
+      display: block;
+      text-align: center;
+    }
+
+    &__station {
       display: block;
       text-align: center;
     }

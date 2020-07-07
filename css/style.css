@@ -1684,6 +1684,7 @@ a {
   .think__image {
     margin: 24px auto 0;
     max-width: 420px;
+    width: 88%;
   }
   .reason {
     padding: 48px 0;
@@ -1897,7 +1898,7 @@ a {
     width: 100%;
   }
   .price__vioItemSpan {
-    font-size: 18px;
+    font-size: 16px;
   }
   .price__caution small {
     font-size: 12px;
@@ -1990,6 +1991,10 @@ a {
     margin: 24px 0 0;
   }
   .salon__businessHours {
+    display: block;
+    text-align: center;
+  }
+  .salon__station {
     display: block;
     text-align: center;
   }

@@ -3,15 +3,13 @@ mb_language('ja');
 mb_internal_encoding('UTF-8');
 
 if($salon ==="銀座店"){
-  // $mailTo = "ginza@zelmo.jp";
-  $mailTo = "tamaru.ytzbr1@gmail.com";
+  $mailTo = "ginza@zelmo.jp";
   $fromBack = "From:".mb_encode_mimeheader("メンズ脱毛サロン ZELMO/ゼルモ 銀座店")."<ginza@zelmo.jp>";
   $salonTel ="03-6260-6075";
   $salonAdd ="東京都中央区銀座2-13-13 久保ビル2F";
   $cookieSalon = "gz";
 }else{
-  // $mailTo = "info@zelmo.jp";
-  $mailTo = "tamaru.ytzbr1@gmail.com";
+  $mailTo = "info@zelmo.jp";
   $fromBack = "From:".mb_encode_mimeheader("メンズ脱毛サロン ZELMO/ゼルモ 恵比寿店")."<info@zelmo.jp>";
   $salonTel ="03-6455-2871";
   $salonAdd ="東京都渋谷区恵比寿西1-7-13 スイングビル4F";
