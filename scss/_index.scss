@@ -1676,6 +1676,10 @@
       width: 100%;
       padding: 16px 0;
       font-size: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 

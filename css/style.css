@@ -2048,6 +2048,9 @@ a {
     padding: 16px 0;
     font-size: 20px;
   }
+  .form__sendButton:hover {
+    cursor: pointer;
+  }
   .footer {
     padding: 24px 0;
   }
