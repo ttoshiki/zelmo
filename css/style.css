@@ -1827,7 +1827,7 @@ a {
     height: 102px;
     padding: 0 0 0 18px;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     writing-mode: vertical-rl;
   }
@@ -1856,7 +1856,7 @@ a {
     right: 0;
   }
   .machine__specsHeading {
-    font-size: 16px;
+    font-size: 15px;
     padding: 16px 2px;
   }
   .machine__evaluations {
@@ -1928,7 +1928,7 @@ a {
     width: 100%;
   }
   .price__vioItemSpan {
-    font-size: 16px;
+    font-size: 11px;
   }
   .price__caution small {
     font-size: 12px;
@@ -2070,6 +2070,7 @@ a {
   .form__item input,
   .form__item select {
     width: 100%;
+    font-size: 3.75vw;
   }
   .form__itemName {
     margin-bottom: 8px;

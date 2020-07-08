@@ -1351,7 +1351,7 @@
         height: 102px;
         padding: 0 0 0 18px;
         margin: 0;
-        font-size: 16px;
+        font-size: 15px;
         text-align: left;
         writing-mode: vertical-rl;
 
@@ -1388,7 +1388,7 @@
     }
 
     &__specsHeading {
-      font-size: 16px;
+      font-size: 15px;
       padding: 16px 2px;
     }
 
@@ -1482,7 +1482,7 @@
     }
 
     &__vioItemSpan {
-      font-size: 16px;
+      font-size: 11px;
     }
 
     &__caution {
@@ -1670,6 +1670,7 @@
       input,
       select {
         width: 100%;
+        font-size: 3.75vw;
       }
     }
 
