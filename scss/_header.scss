@@ -34,16 +34,42 @@
 
 @include mq(pc) {
   .header {
+    &__logo {
+      position: absolute;
+      left: 5%;
+      display: none;
+    }
+
     &__nav {
       display: flex;
-      width: 94%;
+      width: 100%;
       justify-content: flex-end;
       margin: 0 auto;
-      padding: 24px 0;
+      padding: 20px 6%;
       letter-spacing: 1px;
+      transition: 0.2s;
 
       &.-tab {
         display: none;
+      }
+
+      &.-fixed {
+        background-color: $white;
+        align-items: center;
+        position: fixed;
+        z-index: 200;
+
+        .header__logo {
+          display: flex;
+        }
+
+        .header__navLink {
+          color: $black;
+        }
+
+        & + .header__catch {
+          padding-top: 90px;
+        }
       }
     }
 
@@ -58,6 +84,10 @@
     &__navItem {
       margin: 0 22px;
     }
+  }
+
+  .linkButton {
+    height: 50px;
   }
 }
 
@@ -75,8 +105,6 @@
     }
 
     &__navLink {
-      margin-right: 4px;
-
       .linkButton {
         background-color: $gold;
       }
@@ -130,7 +158,6 @@
       position: absolute;
       bottom: 33px;
       right: 0;
-      width: 61%;
       background-color: rgba(174, 150, 14, 0.9);
       border: 2px solid $white;
       padding: 20px 24px;
@@ -144,7 +171,7 @@
     &__navList {
       // hamburger menu
       .header__navLink {
-        padding: 12px 0;
+        padding: 12px 24px 12px 0;
         border-bottom: 1px solid #fff;
         height: auto;
         display: block;
@@ -210,6 +237,12 @@
 
     &__mvImage {
       width: 72.53vw;
+    }
+
+    &__nav {
+      .linkButton__text {
+        font-size: 15px;
+      }
     }
   }
 }

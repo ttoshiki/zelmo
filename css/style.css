@@ -344,14 +344,18 @@ a {
   }
   .linkButton.-salon {
     display: block;
-    text-align: center;
-    pointer-events: auto;
     margin: 8px 0 0;
+    text-align: center;
+    font-size: 14px;
+    pointer-events: auto;
   }
   .linkButton__text {
-    left: 80%;
+    left: 78%;
     margin-left: 0;
     width: 70%;
+  }
+  .linkButton__icon {
+    padding: 8px 6px;
   }
   .modal {
     z-index: 200;
@@ -412,16 +416,37 @@ a {
 }
 
 @media screen and (min-width: 1025px) {
+  .header__logo {
+    position: absolute;
+    left: 5%;
+    display: none;
+  }
   .header__nav {
     display: flex;
-    width: 94%;
+    width: 100%;
     justify-content: flex-end;
     margin: 0 auto;
-    padding: 24px 0;
+    padding: 20px 6%;
     letter-spacing: 1px;
+    transition: 0.2s;
   }
   .header__nav.-tab {
     display: none;
+  }
+  .header__nav.-fixed {
+    background-color: #ffffff;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+  }
+  .header__nav.-fixed .header__logo {
+    display: flex;
+  }
+  .header__nav.-fixed .header__navLink {
+    color: #3a3531;
+  }
+  .header__nav.-fixed + .header__catch {
+    padding-top: 90px;
   }
   .header__navList {
     display: flex;
@@ -432,6 +457,9 @@ a {
   }
   .header__navItem {
     margin: 0 22px;
+  }
+  .linkButton {
+    height: 50px;
   }
 }
 
@@ -444,9 +472,6 @@ a {
   }
   .header__nav.-pc {
     display: none;
-  }
-  .header__navLink {
-    margin-right: 4px;
   }
   .header__navLink .linkButton {
     background-color: #ae960e;
@@ -491,7 +516,6 @@ a {
     position: absolute;
     bottom: 33px;
     right: 0;
-    width: 61%;
     background-color: rgba(174, 150, 14, 0.9);
     border: 2px solid #ffffff;
     padding: 20px 24px;
@@ -501,7 +525,7 @@ a {
     height: 48px;
   }
   .header__navList .header__navLink {
-    padding: 12px 0;
+    padding: 12px 24px 12px 0;
     border-bottom: 1px solid #fff;
     height: auto;
     display: block;
@@ -550,6 +574,9 @@ a {
   }
   .header__mvImage {
     width: 72.53vw;
+  }
+  .header__nav .linkButton__text {
+    font-size: 15px;
   }
 }
 
@@ -1851,6 +1878,9 @@ a {
   .voice__item {
     width: 50%;
   }
+  .voice__image {
+    padding: 0 10px;
+  }
   .flow {
     padding: 60px 0;
   }
@@ -1964,7 +1994,7 @@ a {
     font-size: 30px;
   }
   .salon__infoWrapper {
-    width: 100%;
+    width: 88%;
     margin: 32px auto 0;
   }
   .salon__image {
@@ -1974,7 +2004,7 @@ a {
     flex-direction: column;
   }
   .salon__logo {
-    max-width: 160px;
+    max-width: 140px;
   }
   .salon__text {
     padding-left: 0;
@@ -1986,9 +2016,8 @@ a {
     text-align: center;
   }
   .salon__address {
-    margin: 16px 0 0;
+    margin: 20px 0 0;
     font-size: 15px;
-    margin: 24px 0 0;
   }
   .salon__businessHours {
     display: block;

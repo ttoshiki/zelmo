@@ -328,15 +328,20 @@
   .linkButton {
     &.-salon {
       display: block;
-      text-align: center;
-      pointer-events: auto;
       margin: 8px 0 0;
+      text-align: center;
+      font-size: 14px;
+      pointer-events: auto;
     }
 
     &__text {
-      left: 80%;
+      left: 78%;
       margin-left: 0;
       width: 70%;
+    }
+
+    &__icon {
+      padding: 8px 6px;
     }
   }
 

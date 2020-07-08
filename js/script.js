@@ -146,6 +146,8 @@ $(function () {
 var $elem = $(".js-image-switch");
 var sp = "-sp.";
 var pc = "-pc.";
+var sp2x = "-sp@2x.";
+var pc2x = "-pc@2x.";
 var replaceWidth = 769;
 
 function imageSwitch() {
@@ -155,10 +157,14 @@ function imageSwitch() {
     var $this = $(this);
     if (windowWidth >= replaceWidth) {
       $this.attr("src", $this.attr("src").replace(sp, pc));
-      $this.attr("srcset", $this.attr("src").replace(sp, pc));
+      if ($this.attr("srcset")) {
+        $this.attr("srcset", $this.attr("srcset").replace(sp2x, pc2x));
+      }
     } else {
       $this.attr("src", $this.attr("src").replace(pc, sp));
-      $this.attr("srcset", $this.attr("src").replace(pc, sp));
+      if ($this.attr("srcset")) {
+        $this.attr("srcset", $this.attr("srcset").replace(pc2x, sp2x));
+      }
     }
   });
 }
@@ -171,3 +177,18 @@ $(window).on("resize", function () {
     imageSwitch();
   }, 200);
 });
+
+var _window = $(window),
+  _header = $(".header__nav"),
+  heroBottom;
+
+_window.on("scroll", function () {
+  heroBottom = 80;
+  if (_window.scrollTop() > heroBottom) {
+    _header.addClass("-fixed");
+  } else {
+    _header.removeClass("-fixed");
+  }
+});
+
+_window.trigger("scroll");

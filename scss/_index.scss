@@ -1416,6 +1416,10 @@
     &__item {
       width: 50%;
     }
+
+    &__image {
+      padding: 0 10px;
+    }
   }
 
   .flow {
@@ -1567,7 +1571,7 @@
     }
 
     &__infoWrapper {
-      width: 100%;
+      width: 88%;
       margin: 32px auto 0;
     }
 
@@ -1580,7 +1584,7 @@
     }
 
     &__logo {
-      max-width: 160px;
+      max-width: 140px;
     }
 
     &__text {
@@ -1596,9 +1600,8 @@
     }
 
     &__address {
-      margin: 16px 0 0;
+      margin: 20px 0 0;
       font-size: 15px;
-      margin: 24px 0 0;
     }
 
     &__businessHours {
