@@ -1132,6 +1132,10 @@ a {
   font-size: 20px;
 }
 
+.price__vioItemSmall {
+  display: block;
+}
+
 .price__table {
   width: 96%;
   max-width: 974px;
@@ -1928,6 +1932,10 @@ a {
     width: 100%;
   }
   .price__vioItemSpan {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  .price__vioItemSmall {
     font-size: 11px;
   }
   .price__caution small {

@@ -556,6 +556,10 @@
     font-size: 20px;
   }
 
+  &__vioItemSmall {
+    display: block;
+  }
+
   &__table {
     width: 96%;
     max-width: 974px;
@@ -1482,6 +1486,11 @@
     }
 
     &__vioItemSpan {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    &__vioItemSmall {
       font-size: 11px;
     }
 
