@@ -202,13 +202,13 @@ $(function () {
   let firstDateInputed = false;
   let secondDateInputed = false;
 
-  $('input[name="custmername"]').blur(function () {
+  $('input[name="custmername"]').change(function () {
     if ($(this).val()) {
       nameInputed = true;
     } else {
       nameInputed = false;
     }
-    changeStatus();
+    checkInputted();
   });
   $('input[name="emailadd"]').change(function () {
     if ($(this).val()) {
@@ -216,7 +216,7 @@ $(function () {
     } else {
       emailInputed = false;
     }
-    changeStatus();
+    checkInputted();
   });
   $('input[name="phone"]').change(function () {
     if ($(this).val()) {
@@ -224,7 +224,7 @@ $(function () {
     } else {
       phoneInputed = false;
     }
-    changeStatus();
+    checkInputted();
   });
   $("[name=salon]").change(function () {
     if ($(this).val()) {
@@ -233,7 +233,7 @@ $(function () {
       salonSelected = false;
     }
     console.log();
-    changeStatus();
+    checkInputted();
   });
   $('input[name="firstdate"]').change(function () {
     if ($(this).val()) {
@@ -241,7 +241,7 @@ $(function () {
     } else {
       firstDateInputed = false;
     }
-    changeStatus();
+    checkInputted();
   });
   $('input[name="seconddate"]').change(function () {
     if ($(this).val()) {
@@ -249,10 +249,10 @@ $(function () {
     } else {
       secondDateInputed = false;
     }
-    changeStatus();
+    checkInputted();
   });
 
-  function changeStatus() {
+  function checkInputted() {
     if (
       nameInputed &&
       emailInputed &&
