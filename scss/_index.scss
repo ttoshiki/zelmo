@@ -178,10 +178,6 @@
       z-index: 100;
       width: 44.64%;
     }
-
-    &:not(:first-child) {
-    }
-
     &:nth-child(odd) {
       margin-top: clamp(120px, 20vw, 130px);
 
@@ -964,6 +960,10 @@
       position: absolute;
       pointer-events: none;
       right: 0;
+    }
+
+    &:disabled {
+      background-color: #ccc;
     }
   }
 }

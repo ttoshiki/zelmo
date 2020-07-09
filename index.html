@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PWNBCNV");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -34,17 +51,29 @@
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PWNBCNV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="l-wrapper">
       <div class="l-inner">
-        <header class="header">
+        <header class="header" id="header">
           <nav class="header__nav -pc">
             <div class="header__logo -pc">
-              <img
-                src="img/logo_dark.png"
-                width="74"
-                height="75"
-                alt="ZELMOロゴ"
-              />
+              <a href="#header">
+                <img
+                  src="img/logo_dark.png"
+                  width="74"
+                  height="75"
+                  alt="ZELMOロゴ"
+                />
+              </a>
             </div>
             <ul class="header__navList">
               <li class="header__navItem">
@@ -54,7 +83,7 @@
                 <a href="#flow" class="header__navLink">特別体験の流れ</a>
               </li>
               <li class="header__navItem">
-                <a href="#price" class="header__navLink">プラン料金</a>
+                <a href="#price" class="header__navLink">料金プラン</a>
               </li>
               <li class="header__navItem">
                 <a href="#salon" class="header__navLink">店舗情報</a>
@@ -790,7 +819,7 @@
                 <span class="faq__iconVertical"></span>
               </div>
               <p class="faq__answer yugothic">
-                【毛量、毛質、肌質により個人差はございますが、3〜4回の施術で自己処理が楽になり効果を実感できるお客様が多いようです。<br />
+                毛量、毛質、肌質により個人差はございますが、3〜4回の施術で自己処理が楽になり効果を実感できるお客様が多いようです。<br />
                 また、おしゃれやスタイルに敏感なお客様のリクエストにお応えして、毛量やデザインについてもご相談を承ります。カウンセリング時にご希望をお聞かせください。
               </p>
             </li>
@@ -851,9 +880,7 @@
                       東京都渋谷区恵比寿西1-7-13<br class="-sp" />スイングビル4F
                     </p>
                     <button class="address-copy -ebisu">住所をコピー</button>
-                    <a href="tel:03-6455-2871" class="linkButton -salon">
-                      TEL:03-6455-2871
-                    </a>
+                    <a class="linkButton -salon -tel">TEL:03-6455-2871</a>
                   </address>
                   <span class="salon__businessHours"
                     >平日12:00～21:00(最終受付20:30)<br />
@@ -894,10 +921,10 @@
                 <div class="salon__text">
                   <address class="salon__addresses">
                     <p class="salon__address">
-                      東京都中央区銀座2-13-13久<br class="-sp" />保ビル2F
+                      東京都中央区銀座2-13-13<br class="-sp" />久保ビル2F
                     </p>
                     <button class="address-copy -ginza">住所をコピー</button>
-                    <a href="tel:03-6260-6075" class="linkButton -salon">
+                    <a class="linkButton -salon -tel">
                       TEL:03-6260-6075
                     </a>
                   </address>
@@ -1025,7 +1052,12 @@
                 />
               </div>
               <div class="form__sendButtonWrapper">
-                <button type="submit" class="form__sendButton" id="send_button">
+                <button
+                  type="submit"
+                  class="form__sendButton"
+                  id="send_button"
+                  disabled="disabled"
+                >
                   送信
                 </button>
               </div>
@@ -1036,7 +1068,7 @@
           <div class="header__navLink">
             <a href="#form" class="linkButton -web">
               <span class="linkButton__icon"
-                ><img src="img/icon_pc-primary.png" alt=""
+                ><img src="img/icon_pc-primary-dark.png" alt=""
               /></span>
               <span class="linkButton__text">WEB予約</span>
             </a>
@@ -1044,7 +1076,7 @@
           <div class="header__navLink">
             <a href="" class="linkButton -tel">
               <span class="linkButton__icon"
-                ><img src="img/icon_tel-primary.png" alt=""
+                ><img src="img/icon_tel-primary-dark.png" alt=""
               /></span>
               <span class="linkButton__text">TEL予約</span>
             </a>
@@ -1064,7 +1096,7 @@
               <a href="#flow" class="header__navLink">特別体験の流れ</a>
             </li>
             <li class="header__navItem">
-              <a href="#price" class="header__navLink">プラン料金</a>
+              <a href="#price" class="header__navLink">料金プラン</a>
             </li>
             <li class="header__navItem">
               <a href="#salon" class="header__navLink">店舗情報</a>
@@ -1076,7 +1108,9 @@
         </nav>
       </div>
       <footer class="footer">
-        <img src="img/footer_logo.png" alt="ZELMOロゴ" class="footer__logo" />
+        <a href="#header"
+          ><img src="img/footer_logo.png" alt="ZELMOロゴ" class="footer__logo"
+        /></a>
       </footer>
     </div>
     <div class="modal js-modal">
@@ -1093,8 +1127,12 @@
             恵比寿店
           </span>
         </div>
-        <a href="tel:03-6455-2871" class="modal__tel"
-          ><img
+        <a
+          href="tel:03-6455-2871"
+          class="modal__tel"
+          onclick="gtag('event', 'Click', {'event_category': 'CV','event_label': 'CV_TEL_LP','non_interaction': true});"
+        >
+          <img
             src="img/icon_phone.png"
             alt=""
             class="modal__icon"
@@ -1103,7 +1141,10 @@
         <div class="modal__shopNameWrapper">
           <span class="modal__shopName">銀座店</span>
         </div>
-        <a href="tel:03-6260-6075" class="modal__tel"
+        <a
+          href="tel:03-6260-6075"
+          class="modal__tel"
+          onclick="gtag('event', 'Click', {'event_category': 'CV','event_label': 'CV_TEL_LP','non_interaction': true});"
           ><img
             src="img/icon_phone.png"
             alt=""

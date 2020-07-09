@@ -43,11 +43,14 @@
 
   &.-salon {
     padding: 0;
-    margin: 20px 0;
+    margin: 8px 0;
     background-color: transparent;
     color: $black;
     justify-content: flex-start;
-    pointer-events: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -331,7 +334,6 @@
       margin: 8px 0 0;
       text-align: center;
       font-size: 14px;
-      pointer-events: auto;
     }
 
     &__text {
@@ -367,7 +369,7 @@
     }
 
     &__tel {
-      font-size: 20px;
+      font-size: 5.33vw;
     }
 
     &__icon {

@@ -77,11 +77,14 @@ a {
 
 .linkButton.-salon {
   padding: 0;
-  margin: 20px 0;
+  margin: 8px 0;
   background-color: transparent;
   color: #3a3531;
   justify-content: flex-start;
-  pointer-events: none;
+}
+
+.linkButton.-salon:hover {
+  cursor: pointer;
 }
 
 .cta {
@@ -347,7 +350,6 @@ a {
     margin: 8px 0 0;
     text-align: center;
     font-size: 14px;
-    pointer-events: auto;
   }
   .linkButton__text {
     left: 78%;
@@ -375,7 +377,7 @@ a {
     font-size: 20px;
   }
   .modal__tel {
-    font-size: 20px;
+    font-size: 5.33vw;
   }
   .modal__icon {
     width: 24px;
@@ -420,6 +422,9 @@ a {
     position: absolute;
     left: 5%;
     display: none;
+  }
+  .header__logo a:hover {
+    cursor: pointer;
   }
   .header__nav {
     display: flex;
@@ -469,12 +474,13 @@ a {
     position: sticky;
     bottom: 0;
     z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -3px 4px;
   }
   .header__nav.-pc {
     display: none;
   }
   .header__navLink .linkButton {
-    background-color: #ae960e;
+    background-color: #766713;
   }
   .header__trigger,
   .header__trigger span {
@@ -486,7 +492,7 @@ a {
     position: relative;
     width: 48px;
     height: 100%;
-    background-color: #ae960e;
+    background-color: #524e4b;
   }
   .header__trigger span {
     position: absolute;
@@ -516,7 +522,7 @@ a {
     position: absolute;
     bottom: 33px;
     right: 0;
-    background-color: rgba(174, 150, 14, 0.9);
+    background-color: rgba(124, 119, 116, 0.9);
     border: 2px solid #ffffff;
     padding: 20px 24px;
   }
@@ -1539,6 +1545,10 @@ a {
   position: absolute;
   pointer-events: none;
   right: 0;
+}
+
+.form__sendButton:disabled {
+  background-color: #ccc;
 }
 
 .footer {

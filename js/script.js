@@ -192,3 +192,78 @@ _window.on("scroll", function () {
 });
 
 _window.trigger("scroll");
+
+// form validation
+$(function () {
+  let nameInputed = false;
+  let emailInputed = false;
+  let phoneInputed = false;
+  let salonSelected = false;
+  let firstDateInputed = false;
+  let secondDateInputed = false;
+
+  $('input[name="custmername"]').blur(function () {
+    if ($(this).val()) {
+      nameInputed = true;
+    } else {
+      nameInputed = false;
+    }
+    changeStatus();
+  });
+  $('input[name="emailadd"]').change(function () {
+    if ($(this).val()) {
+      emailInputed = true;
+    } else {
+      emailInputed = false;
+    }
+    changeStatus();
+  });
+  $('input[name="phone"]').change(function () {
+    if ($(this).val()) {
+      phoneInputed = true;
+    } else {
+      phoneInputed = false;
+    }
+    changeStatus();
+  });
+  $("[name=salon]").change(function () {
+    if ($(this).val()) {
+      salonSelected = true;
+    } else {
+      salonSelected = false;
+    }
+    console.log();
+    changeStatus();
+  });
+  $('input[name="firstdate"]').change(function () {
+    if ($(this).val()) {
+      firstDateInputed = true;
+    } else {
+      firstDateInputed = false;
+    }
+    changeStatus();
+  });
+  $('input[name="seconddate"]').change(function () {
+    if ($(this).val()) {
+      secondDateInputed = true;
+    } else {
+      secondDateInputed = false;
+    }
+    changeStatus();
+  });
+
+  function changeStatus() {
+    if (
+      nameInputed &&
+      emailInputed &&
+      phoneInputed &&
+      salonSelected &&
+      firstDateInputed &&
+      secondDateInputed
+    ) {
+      $(".form__sendButton").prop("disabled", false);
+    } else {
+      $(".form__sendButton").prop("disabled", true);
+    }
+  }
+});
