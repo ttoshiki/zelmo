@@ -15,7 +15,7 @@ include "tmpl.php";
 
 if(mb_send_mail($mailTo, $subject, $message ,$from) and mb_send_mail($mailBack, $subject, $messageback ,$fromBack)){
 setcookie("salon",$cookieSalon,time()+60*5,"/");
-header('Location: ../contact/thanks.html');
+header('Location: ../../contact/thanks.html');
 
 }else{
 
